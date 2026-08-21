@@ -1,61 +1,53 @@
-# Shivam Singh - AI and Data Product Management
+# Shivam Singh — AI & Data Product Management
 
-## Profile
+I build AI products as decision systems: not isolated models, but combinations of trusted context, bounded authority, reliable execution, human judgment, and measurable economic outcomes.
 
-Hi, I’m Shivam. I like product problems where the technology is powerful, the operating environment is messy, and the right answer is not simply “add AI.” My work sits across customer discovery, product strategy, data platforms, evaluation, responsible deployment, and the everyday details that determine whether a product becomes useful in production.
+[Resume](./shivam-singh-ai-product.pdf) · [LinkedIn](https://www.linkedin.com/in/beastofbayarea) · [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
 
-You can reach me at [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/beastofbayarea).
+## A model becomes a product only when the whole chain works
 
-## How I make product decisions
+~~~text
+real user decision
+      ↓
+trusted data and context
+      ↓
+permissioned action
+      ↓
+reliable workflow
+      ↓
+human feedback and recovery
+      ↓
+measured customer and business value
+~~~
 
-I start with the user’s decision or job, not the model. Then I ask what data the product can trust, what the system should be allowed to do, where a person needs to stay in control, and how we will know the experience is improving.
+Each project in this portfolio owns a different failure point in that chain. Together they describe how I decide what to build, what not to automate, and what evidence a system needs before it receives more authority.
 
-That leads me naturally into questions about retrieval, evaluation, permissions, observability, developer experience, and unit economics. I’m interested in all of them because they shape the same thing: whether a customer can rely on the product.
+## Reliability changes the roadmap
 
-## Projects, from newest to oldest
+[Resetting an enterprise GenAI roadmap around production use](./projects/enterprise-genai-production-reliability-turnaround.md) began when 90% of deployments remained in test and 70% of closed-lost deals cited reliability rather than missing features. I paused lower-priority expansion, made production promotion the unit of strategy, and introduced a four-stage maturity system spanning workflow ownership, quality, connectors, identity, observability, recovery, and cost. Interactive performance moved from three-to-five seconds to under 800 milliseconds, training cost fell 22%, and sustained-use engagement rose 25%; the final production-conversion rate is deliberately not invented.
 
-The files below go beyond a one-line summary. Each is reconstructed independently around its users, product decision, technology, commercial context, operating constraints, and evidence. The source notes distinguish internal records, public company facts, external methods, modeled value, observed results, later developments, and unresolved measurement gaps.
+That case establishes the first rule of this portfolio: a demo is an experiment, a feature is a dependency, and only an operable workflow is a product.
 
-### Amazon Web Services (AWS)
+## Context must be governed before it can compound
 
-**Director, AI and Data Platform Product Management** | July 2024 - Present
+At Rakuten, I [stopped a generic merchant chatbot and built around governed context](./projects/merchant-ai-governed-knowledge-graph.md). Listing, review, and image workflows shared merchant, catalog, policy, and performance knowledge without pretending one universal answer or risk threshold fit every job. The build-versus-partner decision and knowledge graph mattered because context became a reusable control plane, not merely prompt input.
 
-#### [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md)
+In investment operations, [intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) made each extracted field a typed, validated, attributable fact. The product distinguished routing confidence from field accuracy, tied reviewer corrections to governed training data, reduced comparable processing cost by roughly 70%, moved eligible ingestion from hours to seconds, and saved an estimated 15 person-weeks annually. Automation expanded only where evidence supported it.
 
-I reset an enterprise GenAI roadmap after feature delivery diverged from production use. A four-state maturity model, workflow gates, queue- and generation-aware scaling, and an explicit reliability-versus-feature decision moved the product toward real-time use; the account reports the final production-conversion rate as missing rather than implying every test deployment advanced.
+## Authority should scale with consequence
 
-#### [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md)
+[The regulated enterprise-agent platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) made the approved route easier than shadow deployment. Enterprise identity, private connectivity, persistent task state, permissioned tools, policy and human checkpoints, isolated execution, and customer-owned traces became one golden path. It grew from zero to more than 5,000 tenants and supported $20 million in commercial scope, while workflow-level time savings remained bounded to the deployments that measured them.
 
-I made the approved path for stateful, tool-using enterprise agents easier than the shadow alternative. The product contract covered user and agent identity, private connectivity, state, permissioned tools, human checkpoints, isolated execution, and split observability; the account separates internal evidence from AWS’s later public AgentCore launch and treats zero recorded exfiltration as a bounded observation.
+The product decision was not whether an agent could call a tool. It was who could grant authority, what could be done, when a person had to intervene, and how the customer could reconstruct the act.
 
-### Rakuten Group, Inc.
+## Explanations must change the user's next action
 
-**Senior Product Manager, GenAI and Merchant Platform - MBA Intern** | June 2023 - December 2023
+[Wealth-management next-best actions](./projects/wealth-management-explainable-next-best-actions.md) replaced an accurate but scarcely used churn score with one adviser card: recommended action, client-specific reasons, source evidence, limits, and a recorded human choice. Preparation effort fell 50%, false positives fell 18%, and a controlled regional pilot recorded 12% lower churn. Dismissal reasons became roadmap input, and the action policy changed when COVID made the old intervention unsafe even though the prediction still worked.
 
-#### [Merchant AI: governed knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md)
+[The retail analytics product factory](./projects/retail-analytics-product-factory-agile-hindcasting.md) solved the opposite problem: historical prices could not reveal demand response. Controlled store tests manufactured evidence; SKU economic roles and customer guardrails constrained optimization; merchant evidence cards and overrides preserved accountable judgment. The publish cycle fell from six weeks to under one, overrides were below 5% by month two, and a rotating 1% sample kept the system learning.
 
-I stopped a generic merchant chatbot and moved AI into listing, review, and image jobs backed by governed context. The account corrects “70 businesses” to Rakuten’s public “70+ services,” treats internal adoption and conversion figures with their missing denominators, and does not claim the merchant product that publicly launched after my internship.
+## My product standard
 
-### Microsoft Corporation
+Across AWS, Rakuten, Microsoft, D. E. Shaw, and McKinsey, I have owned product definitions, roadmap trade-offs, launch and promotion gates, evaluation systems, data and permission contracts, adoption loops, and executive outcome accounts. Engineering, Risk, Sales, Operations, and customers retain their own authority; good product leadership makes those boundaries executable.
 
-**Senior Product Manager, Cloud Data and Lifecycle Intelligence** | January 2020 - August 2022
-
-#### [Wealth management: explainable next-best actions](./projects/wealth-management-explainable-next-best-actions.md)
-
-I redesigned an accurate but unused churn model into an adviser decision product with an action, client-specific reasons, source evidence, limits, human choice, and an audit trail. A controlled regional pilot, reason-coded disagreement, and a COVID-era action-policy reset linked the model to client outcomes while keeping assets, annualized revenue protection, and causal claims separate.
-
-### The D. E. Shaw Group
-
-**Vice President, Data and Intelligent Automation Product** | July 2016 - December 2019
-
-#### [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md)
-
-I built an intelligent document-processing platform that treated each extracted field as a typed, validated, attributable fact. The rewrite distinguishes a 0.98 routing threshold from 98% accuracy, routes reviewed corrections through governed training data, and removes a $25M financing outcome that public chronology places after my tenure.
-
-### McKinsey & Company
-
-**Product Strategy Associate - Digital, Analytics & FinTech** | 2014 - 2016
-
-#### [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md)
-
-I built a retail-pricing decision system when static historical prices could not reveal demand response. Controlled store tests, interpretable elasticity, SKU economic roles, customer guardrails, merchant evidence and overrides, weekly pods, and continuous exploration reduced the local publish cycle from six weeks to under one while keeping a $50M opportunity estimate distinct from realized revenue.
+The product is complete when a customer can use it repeatedly, understand its limits, recover from failure, govern its actions, and show that it improves a decision worth making.
