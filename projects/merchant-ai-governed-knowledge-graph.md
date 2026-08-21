@@ -59,6 +59,6 @@ A separate 25% mobile-network energy reduction appears in the source but belongs
 
 Rakuten publicly launched [RMS AI Assistant (Beta) in March 2024](https://global.rakuten.com/corp/news/press/2024/0430_01.html), after my internship ended. Its description—product-copy generation, image processing, inquiry responses, sales analysis, and merchant support—validates the later company direction but is not a launch I claim.
 
-I owned the job-level reframing, decision to stop the chat-first product, build/partner boundary, embedded experiences, graph and permission requirements, cross-service sequencing, launch priorities, and measurement system. Engineering owned implementation; privacy and legal retained control authority; commerce teams owned local workflows; merchants owned published content.
+Stopping the chat-first product and replacing it with job-level experiences was my call; I also set the build/partner boundary, graph and permission requirements, cross-service sequence, launch priorities, and measurement. Engineering implemented, Privacy/Legal controlled data use, commerce teams governed local workflows, and merchants controlled publication.
 
 The strategic asset was not an assistant. It was a governed context layer that could create many task-specific products, make Rakuten’s proprietary data useful without making it universally accessible, and reduce merchant work where that work already happened.

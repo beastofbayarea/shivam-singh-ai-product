@@ -4,7 +4,7 @@ Ninety percent of deployments were still in test. Seventy percent of closed-lost
 
 These were different populations and measures, but they pointed to one product failure: the roadmap rewarded demonstrations while customers needed repeatable operations.
 
-During my AWS role, I led the product-strategy reset across enterprise users, technology and risk leaders, engineering, sales, customer success, support, finance, and product executives. I paused lower-priority expansion and made **production promotion**—not endpoint creation, demo count, or feature shipment—the unit of strategy.
+During my AWS role, the product-strategy reset became my mandate across enterprise users, technology/risk leaders, Engineering, Sales, Customer Success, Support, Finance, and product executives. I paused lower-priority expansion and made **production promotion**—not endpoint creation, demos, or shipped features—the unit of strategy.
 
 ## What counted as the product
 
@@ -62,6 +62,6 @@ Leadership also identified a projected GPU-waste opportunity above 20%. That for
 
 The [NIST Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1) reinforces the broader readiness perimeter—evaluation, data, privacy, oversight, monitoring, incidents, and misuse—but postdates part of the work and is presented only as an external benchmark.
 
-I owned the diagnosis, definition of production, maturity system, roadmap reallocation, customer segmentation, readiness gates, banking trade-off, and executive measurement account. Engineering owned architecture and operation; customer teams owned workflows and controls; sales and customer success owned commitments; risk specialists retained approval authority.
+The diagnosis, production definition, maturity system, roadmap reallocation, segmentation, readiness gates, banking trade-off, and executive measurement account were the decisions I carried. Engineering retained architecture/operations; customers retained workflows/controls; Sales and Customer Success retained commitments; Risk retained approval.
 
 The turnaround mattered because it changed what the organization was willing to call progress. A demo became an experiment. A feature became a dependency. Only a workflow that customers could operate, support, govern, and afford became a product.

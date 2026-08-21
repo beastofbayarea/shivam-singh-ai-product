@@ -4,7 +4,7 @@ The retailer did not have a prediction shortage. It had a decision-production pr
 
 A seasonal, cost-plus process was overpricing visible essentials, leaving margin unused on less sensitive products, and taking six weeks to move an approved change consistently across stores and digital channels. Two years of historical data looked abundant, but price had barely varied; correlation could not reveal how demand would respond to a decision the business had rarely made.
 
-At McKinsey, I led the product strategy for the end-to-end pricing factory: experimental evidence, product roles, explainable recommendations, merchant authority, customer guardrails, cross-channel execution, continuous learning, and the executive bridge to a modeled $50 million opportunity.
+At McKinsey, I was responsible for making the pricing factory work end to end: experimental evidence, product roles, explainable recommendations, merchant authority, customer guardrails, cross-channel execution, continuous learning, and the bridge to a modeled $50 million opportunity.
 
 ## First, manufacture evidence
 
@@ -64,6 +64,6 @@ Daily sales, inventory, competitor, and promotion data refreshed recommendations
 | Learning coverage | no permanent test cell → ongoing exploration → 1% rotating sample | Random assignment, power, harm, and stop rules |
 | Customer protection | unconstrained movement → explicit policy → top 500 locks and ±5% cap | Policy adherence, exceptions, and price-perception outcome |
 
-I owned the product factory: problem framing, experimentation standard, SKU roles, interface, guardrails, pod model, learning loop, merchant adoption, and value account. Data science owned estimation; merchants retained judgment; marketing owned promotion coherence; operations and technology owned publication integrity; finance owned realized economics.
+Product-level responsibility for framing, experimentation, SKU roles, interface, guardrails, the pod, learning loop, merchant adoption, and value account stayed with me. Data Science estimated; merchants judged; Marketing protected promotion coherence; Operations/Technology protected publication; Finance calculated realized economics.
 
 The result was not an algorithm that set prices. It was an operating system that created evidence, converted it into a constrained portfolio decision, exposed its reasoning, allowed accountable dissent, executed consistently, and learned from the market.

@@ -2,7 +2,7 @@
 
 Adviser usage was below 5%. The churn model might have been statistically useful, but its product was a score with no action, no client-level evidence, and no explanation. An adviser still had to search at least five systems before deciding whether the alert mattered.
 
-During my Microsoft role, I led the redesign for a large UK wealth manager. I changed the objective from **predict churn** to **help an adviser choose an appropriate next action**. The model could prioritize; the adviser remained accountable for contact; compliance could reconstruct the evidence; the client was never subjected to an automated relationship action because a score crossed a threshold.
+For a large UK wealth manager during my Microsoft role, I reframed and directed the redesign from **predict churn** to **help an adviser choose an appropriate next action**. The model prioritized; the adviser controlled contact; Compliance reconstructed evidence; no relationship action followed automatically from a threshold.
 
 ## One card replaced five searches
 
@@ -58,6 +58,6 @@ One case describes an adviser noticing falling liquidity and mortgage-page behav
 
 External data scientists were paired with internal engineers so feature logic, monitoring, deployment, and feedback did not leave with the project. Advisers co-designed explanations and actions. Compliance defined the evidence and reconstruction need. Data owners fixed sources. Operations managed the new cadence.
 
-I owned the user research, action policy, recommendation interface, feedback taxonomy, pilot design, COVID response, cross-functional decisions, measurement chain, and handover model. I did not own an adviser’s judgment or label every retained relationship a model success.
+User research, action policy, the recommendation interface, feedback taxonomy, pilot, COVID response, cross-functional choices, measurement chain, and handover sat inside my product scope. Adviser judgment remained outside it, and no retained relationship was automatically labeled a model success.
 
 The product’s durable advantage was accountable disagreement. A useful next-best-action system did not hide uncertainty or replace the relationship; it gave the adviser enough evidence to act, enough control to refuse, and enough structure for every refusal to improve the system.

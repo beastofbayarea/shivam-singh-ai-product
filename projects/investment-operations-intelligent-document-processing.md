@@ -4,7 +4,7 @@ A page of recognized characters was not a product.
 
 Across 15 investment and operations teams at D. E. Shaw, statements, notices, filings, and deal documents were moving through local tools and incompatible taxonomies. Basic OCR was near 80% on complex material, particularly nested tables, footnotes, and fields whose meaning depended on headings. Operations staff retyped information, while investors could not reliably trace a figure back to its source.
 
-I led the product definition and operating model for a document platform that treated every output as a typed, validated, attributable fact.
+My product brief defined both the platform and its operating model around a stricter output: every extracted value had to become a typed, validated, attributable fact.
 
 ## A number had to carry its meaning
 
@@ -60,6 +60,6 @@ The product account had to show quality and coverage together. High precision ac
 
 The retained narrative also claims that the platform shortened a QC Ware deal process from 48 hours to six and supported a $25 million Series B. Public records date that [Series B to September 2021](https://www.qcware.com/news), after my D. E. Shaw tenure ended in December 2019. I exclude that result. QC Ware’s [$6.5 million Series A in July 2018](https://www.prnewswire.com/news-releases/qc-ware-raises-6-5-million-series-a-financing-for-its-cloud-quantum-computing-software-service-300678415.html) confirms a contemporaneous firm relationship, not this platform’s contribution.
 
-I owned the product boundary, user workflow, taxonomy strategy, automation policy, review experience, feedback governance, cross-team adoption, and trade-offs among speed, cost, and silent-error risk. ML and data specialists owned implementation; operations retained exception judgment; legal and compliance owned controls; investment teams owned decisions.
+The boundary, user workflow, taxonomy, automation policy, reviewer experience, feedback governance, adoption plan, and speed–cost–silent-error trade-offs were mine to settle. ML/Data implemented; Operations judged exceptions; Legal/Compliance controlled policy; investment teams made decisions.
 
 The strategic asset was a governed supply chain for financial facts: fast where evidence justified automation, human where uncertainty or consequence demanded it, and traceable from immutable source to every material use.

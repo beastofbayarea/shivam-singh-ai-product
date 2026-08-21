@@ -4,7 +4,7 @@ The real competitor was shadow AI.
 
 Employees in regulated organizations already had access to public tools that were easy but uncontrolled. Internal alternatives were safer but fragmented: three services to configure, state lost across interrupted work, weeks to reach a private system, and roughly three-second pauses in voice workflows.
 
-During my AWS role, I led the product program to make the compliant route more useful than the workaround. The perimeter included more than 15 engineers, more than 5,000 regulated tenants, and $20 million in supported contracts across clinical, banking, and enterprise workflows. That scale turned identity, isolation, setup, state, private connectivity, and observability into commercial product decisions.
+Making the compliant route more useful than the workaround was my AWS product mandate. The perimeter—15+ engineers, 5,000+ regulated tenants, and $20 million in supported contracts across clinical, banking, and enterprise workflows—turned identity, isolation, setup, state, private connectivity, and observability into commercial decisions.
 
 ## The deployable-agent contract
 
@@ -62,6 +62,6 @@ The wider account remains deployment-specific:
 
 AWS later announced [Amazon Bedrock AgentCore in preview in July 2025](https://aws.amazon.com/about-aws/whats-new/2025/07/amazon-bedrock-agentcore-preview/) and [general availability in October 2025](https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-bedrock-agentcore-available/). The timing confirms relevant AWS product context during my employment but does not independently prove my authorship or every metric here.
 
-I owned the product thesis, discovery, agent-control contract, golden-path requirements, sequencing, code-execution and voice gates, setup simplification, adoption design, and cross-functional account. Engineering and security owned implementation and proof; customer risk owners approved use; workflow leaders retained human accountability.
+My accountability ran from thesis and discovery through the agent-control contract, golden path, sequence, code/voice gates, setup simplification, and adoption design. Engineering and Security proved the implementation; customer Risk approved use; workflow leaders retained human accountability.
 
 The strategic move was to make governance the shorter path. Persistent work, private tools, bounded authority, isolated execution, and observable decisions became reasons to use the approved platform—not paperwork attached after adoption.
