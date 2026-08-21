@@ -2,7 +2,7 @@
 
 > **Experience alignment:** McKinsey & Company, Product Strategy Associate - Digital, Analytics & FinTech, 2014-2016.
 
-> **Grounding standard:** This is a conservative interview reconstruction. Candidate-specific role, action, and outcome claims come from the [public role-targeted resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf). The remaining sources establish contemporaneous retail-analytics, Agile, and forecast-validation methods; they do not independently verify the candidate's participation.
+> **Evidence hierarchy:** Contemporaneous external methodology and market sources are the primary grounding for the case framing, delivery model, validation approach, and trade-offs. The [public role-targeted resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is secondary evidence used only for the work-experience dates and candidate-specific outcome claims. The external sources do not independently verify the candidate's participation.
 
 ## Portfolio lens
 
@@ -59,9 +59,9 @@ AI product management · retail analytics · Agile pods · hindcasting · out-of
 
 | Evidence used | External source | Publication timing |
 |---|---|---|
-| Candidate role, 2014-2016 timeline, Agile Pod action, hindcasting, six-week to sub-one-week cycle, and adoption outcome | [Public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Current public artifact describing 2014-2016 experience |
 | Retail big-data value potential and the need to redesign workflows, incentives, talent, and data access | [McKinsey Global Institute - Big data: The next frontier for innovation, competition, and productivity](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) | May 2011 |
 | Iterative delivery, customer collaboration, working increments, and adapting to change | [Manifesto for Agile Software Development](https://agilemanifesto.org/) | 2001 |
 | Rolling-origin, multiple-period, out-of-sample forecast validation | [Tashman - Out-of-sample tests of forecasting accuracy](https://doi.org/10.1016/S0169-2070(00)00065-0) | October 2000 |
+| Secondary alignment only: candidate role, 2014-2016 timeline, Agile Pod action, hindcasting, six-week to sub-one-week cycle, and adoption outcome | [Public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Current public artifact describing 2014-2016 experience |
 
 All methodological sources predate the 2014-2016 work-experience window.
