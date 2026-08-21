@@ -22,6 +22,19 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 - [Omni One gamified player progression proposal](./work-samples/virtuix-omni-one-gamified-player-progression-system-proposal.pdf) - engagement and progression-system design
 - [Omni One VR boundary and mode-switching PRD](./work-samples/virtuix-omni-one-pico-vr-boundary-and-mode-switching-prd-2024.pdf) - product requirements and cross-device experience design
 
+## Project interview stories
+
+Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+
+- [Financial-services agent platform: governed workflows](./projects/financial-services-agent-platform-governed-workflows.md) - controlled agentic workflows for regulated operations
+- [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md) - evaluation, observability, and production quality
+- [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) - secure-by-design enterprise agent architecture
+- [Merchant AI: governed knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md) - trusted merchant intelligence and governed recommendations
+- [Customer data platform: real-time intent](./projects/customer-data-platform-real-time-intent.md) - streaming customer intelligence and activation
+- [Wealth management: explainable next-best actions](./projects/wealth-management-explainable-next-best-actions.md) - explainable AI for advisor workflows and retention
+- [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) - document automation with human review and controls
+- [Veeqo: merchant assurance platform strategy](./projects/veeqo-merchant-assurance-platform-strategy.md) - platform strategy for merchant confidence and adoption
+
 ## Profile
 
 - Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
