@@ -1,81 +1,67 @@
 # Resetting an enterprise GenAI roadmap around production use
 
-I led product strategy for an enterprise generative-AI platform during my AWS role. I found that customers could demonstrate the technology but could not depend on it inside everyday work. I worked with enterprise users, technology and risk leaders, engineering, sales, customer success, support, finance, and product executives.
+Ninety percent of deployments were still in test. Seventy percent of closed-lost deals cited reliability rather than a missing feature. Customers were experiencing three-to-five-second inference, two-to-four-minute brownouts while capacity started, incomplete connectors, and workflows with no stable owner or input standard.
 
-## I audited the roadmap against customer evidence
+These were different populations and measures, but they pointed to one product failure: the roadmap rewarded demonstrations while customers needed repeatable operations.
 
-Feature delivery was active while 90% of deployments remained in test. Closed-lost evidence attributed 70% of lost deals to reliability rather than an absent feature. Customers experienced three-to-five-second inference, two-to-four-minute brownouts while new capacity started, missing connectors, unclear controls, and workflows with no stable owner or input standard.
+During my AWS role, I led the product-strategy reset across enterprise users, technology and risk leaders, engineering, sales, customer success, support, finance, and product executives. I paused lower-priority expansion and made **production promotion**—not endpoint creation, demo count, or feature shipment—the unit of strategy.
 
-Those figures described different populations. The 90% applied to deployments, the 70% to lost deals, and the latency to the measured inference path. I did not combine them into an adoption score.
+## What counted as the product
 
-My diagnosis was that the roadmap’s unit of value was wrong. A model endpoint, demo, or feature was not the product. The product was a consequential customer workflow that could operate repeatedly—with acceptable speed, quality, recovery, governance, support, and economics.
+I defined the product as a consequential customer workflow that could operate repeatedly with acceptable speed, quality, recovery, governance, support, and cost. The model endpoint was only one dependency.
 
-I paused lower-priority expansion and rewrote the roadmap around four constraints: production reliability, integration, workflow readiness, and accountable operation.
+That definition produced a four-stage maturity ladder:
 
-I reset the enterprise product across infrastructure, workflow design, customer commitments, cost, risk, support, and executive priority. With 90% of deployments still confined to test and live workloads brownout-prone, I made production promotion—not demo count—the unit of strategy, redirected capacity toward the failing core, and withheld attractive expansion work until customers could operate the platform every day.
-
-## A maturity model replaced the word “production”
-
-I introduced four states with observable promotion evidence:
-
-| State | Customer reality | Evidence needed to advance |
+| Stage | Customer reality | Promotion evidence |
 |---|---|---|
-| Experiment | sporadic calls and exploration | named problem, eligible users, baseline, owner, and value hypothesis |
-| Workflow | repeatable task on real company data | stable procedure, validated inputs, quality evaluation, and human fallback |
-| Integration | daily operation across systems | connectors, identity, monitoring, rollback, support, and change ownership |
-| Scale | sustained material use | user-facing objectives, capacity plan, incident process, cost controls, and expansion evidence |
+| Experiment | Sporadic calls exploring a use case | Named problem, eligible users, baseline, accountable owner, value hypothesis |
+| Workflow | Repeatable task on real company data | Stable procedure and inputs, quality evaluation, human fallback |
+| Integration | Daily operation across systems | Connectors, identity, monitoring, rollback, support, change ownership |
+| Scale | Sustained material use | User-facing objectives, capacity plan, incident process, cost controls, expansion proof |
 
-An account stalled for more than 30 days triggered an integration workshop. Product then aggregated repeated blockers across those workshops so connectors, auditability, or data readiness could outrank a highly visible demonstration feature.
+Accounts stalled for more than 30 days triggered an integration workshop. I aggregated the blockers: if several customers could not resolve identity, audit, connector, or data-readiness issues, that shared constraint could outrank a visible new feature.
 
-The ladder also exposed non-technical failure. One legal workflow churned because its intake fields were inconsistent. More model speed would only have automated disorder. I added a workflow-readiness gate: a stable procedure, accountable business owner, defined inputs, reachable systems, review policy, and measurable outcome had to exist before production promotion.
+The maturity ladder also stopped technical teams from automating organizational disorder. One legal workflow churned because intake fields were inconsistent. Faster inference would have failed faster. Production readiness therefore required a stable procedure, business owner, defined input, reachable system, review policy, and measurable operating outcome.
 
-## The brownout became a product problem
+## Reliability became a roadmap capability
 
-CPU-only autoscaling reacted after queues formed. Large workloads then needed two to four minutes to add capacity, creating a user-visible brownout.
+The platform’s CPU-only scaling signal reacted after queues formed. Large workloads then waited two to four minutes for capacity, creating a customer-visible brownout.
 
-I set a product requirement around the experience rather than a particular infrastructure mechanism. The team added queue depth, time per token, workload class, and priority to scaling decisions; held warm buffer capacity for latency-sensitive traffic; and used checkpointed interruptible capacity where training work could safely resume. The trade-off was deliberate: some idle capacity for important real-time requests, interruption complexity for lower training cost, and LLM-specific telemetry in exchange for earlier control.
+I set requirements from the experience backward. Scaling incorporated queue depth, time per token, workload class, and priority. Latency-sensitive traffic received warm buffer capacity; interruptible training workloads used checkpoints where safe resume was possible. The trade was explicit: pay for some idle capacity to protect high-value real-time work, accept interruption complexity to reduce lower-priority training cost, and invest in LLM-specific telemetry to act before a generic CPU threshold moved.
 
-Latency, capacity, model behavior, and workflow success could not share one SLO. I required a measurement tree:
+I refused a single “AI uptime” metric. The measurement tree separated:
 
 - time to first response and end-to-end completion by workload class and percentile;
-- queue wait, generation time, errors, timeouts, and capacity additions;
-- task quality and groundedness on a versioned evaluation set;
-- successful workflow completion, human takeover, and recovery; and
-- cost per completed eligible task, not cost per token in isolation.
+- queue wait, generation, errors, timeouts, and capacity-addition events;
+- groundedness and task quality on a versioned evaluation set;
+- completed workflow, human takeover, and recovery;
+- cost per completed eligible task; and
+- account progression through the maturity ladder.
 
-[Google’s SRE guidance on service-level objectives](https://sre.google/sre-book/service-level-objectives/) supports the customer-first logic: an indicator should represent behavior users care about and an objective should inform decisions. The [AWS Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) supplied a current external benchmark for monitoring, graceful degradation, fault isolation, recovery, and resilience exercises.
+[Google’s SRE guidance on SLOs](https://sre.google/sre-book/service-level-objectives/) informed the user-centered indicator design. The [AWS Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) supplied an external benchmark for graceful degradation, fault isolation, recovery, and resilience exercises. Neither source substitutes for the internal results.
 
-## The feature conflict that made the strategy real
+## The banking decision made the reset credible
 
-A banking customer requested voice while its existing text workflow was failing 15% of requests. Engineering estimated that immediate voice load could push failure toward 30%. The 30% figure was a scenario, not an observed result.
+A banking customer asked for voice while its text workflow was failing 15% of requests. Engineering estimated that adding voice immediately could push failure toward 30%. That was a capacity scenario, not an observed outcome.
 
-I framed the customer decision plainly: add a new interface to a failing core now, or fix timeouts and capacity before a later voice launch. The customer chose stability. I kept reversible preparation moving while blocking the dependency that would compound production harm.
+I gave the customer and sales team a real choice: add a new interface to an unstable core, or fix timeouts and capacity first while preserving reversible preparation for voice. The customer chose stability.
 
-That choice reset how sales and engineering discussed reliability. It was no longer undifferentiated internal work. It was a customer capability with an explicit cost, release gate, and commercial argument.
+This changed the organizational conversation. Reliability was no longer anonymous “platform work.” It became a customer capability with a commercial argument, a release gate, and an acknowledged opportunity cost.
 
-## What the retained scorecard supports
+## Executive result account
 
-| Measure | Baseline | Intended direction | Recorded result | Defensible interpretation |
-|---|---:|---:|---:|---|
-| Inference latency | 3–5 s | sub-second | <800 ms | at least 73.3% and as much as 84% lower than the stated range; timestamp boundary and percentile are not retained |
-| Scale-out brownout | 2–4 min | serve priority traffic without cold-start impairment | warm-buffer design introduced | no post-change brownout duration retained |
-| Training cost | index 100 | reduce without losing completed work | index 78 | 22% lower; absolute spend, workload mix, and measurement window absent |
-| Engagement | index 100 | increase sustained product use | index 125 | 25% increase; cohort, event definition, and window absent, so not claimed as causal adoption lift |
-| Deployments in test | 90% | move ready workflows into operation | no final rate retained | important baseline; no defensible production-conversion result |
+| Decision | Baseline → target → recorded result | Measurement boundary |
+|---|---|---|
+| Interactive performance | 3–5 s → sub-second → <800 ms | Same request class and timestamp boundary at stated percentile; 73.3–84% lower across the recorded baseline range |
+| Cold-start impairment | 2–4 min → priority traffic served without brownout → warm-buffer design introduced | Post-change duration not retained; architecture shipped is not a quantified outcome |
+| Training economics | cost index 100 → reduce without lost work → 78 | Completed comparable training workload; 22% lower |
+| Sustained use | engagement index 100 → increase with workflow completion → 125 | Cohort, qualifying event, and window must remain constant; recorded 25% rise is not automatically causal adoption |
+| Production conversion | 90% of deployments in test → promote ready workflows → final share not retained | Deployment maturity state with explicit promotion evidence |
 
-Leadership had also identified a projected cost opportunity above 20% from GPU waste. That forecast helped prioritize the work; it is not an additional realized saving and should not be added to the recorded 22% training-cost change.
+Leadership also identified a projected GPU-waste opportunity above 20%. That forecast justified prioritization but is not additive to the recorded 22% cost change.
 
-The [NIST Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1), published in 2024, reinforces why readiness must extend beyond uptime: production risk includes model evaluation, data and privacy, human oversight, monitoring, incident handling, and misuse. I use it as an external benchmark rather than evidence of the internal implementation.
+The [NIST Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1) reinforces the broader readiness perimeter—evaluation, data, privacy, oversight, monitoring, incidents, and misuse—but postdates part of the work and is presented only as an external benchmark.
 
-## The product leadership I owned
+I owned the diagnosis, definition of production, maturity system, roadmap reallocation, customer segmentation, readiness gates, banking trade-off, and executive measurement account. Engineering owned architecture and operation; customer teams owned workflows and controls; sales and customer success owned commitments; risk specialists retained approval authority.
 
-I owned the diagnosis, maturity model, roadmap reset, customer segmentation, readiness criteria, feature trade-offs, cross-functional priorities, and executive success account. Engineering owned architecture and operation. Customer teams owned their workflows and controls. Sales and customer success owned account commitments and intervention. Risk specialists retained approval authority.
-
-The strongest defensible outcome is a platform and organization reoriented from features shipped to workflows operated, accompanied by the recorded latency, cost, and engagement changes. The project record does not establish the final share of deployments that reached production, incremental revenue, or the observation definitions behind every headline figure, so I do not invent them.
-
-## Sources and boundaries
-
-- The retained project record provides the adoption mismatch, latency, brownout, scaling, maturity, customer decision, cost, and engagement evidence.
-- [Google SRE: Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) — external design basis for user-centred indicators and decision-linked objectives.
-- [AWS Well-Architected Framework: Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) — current external reliability benchmark.
-- [NIST AI 600-1: Generative Artificial Intelligence Profile](https://doi.org/10.6028/NIST.AI.600-1) — 2024 external benchmark for GenAI-specific risk and measurement.
+The turnaround mattered because it changed what the organization was willing to call progress. A demo became an experiment. A feature became a dependency. Only a workflow that customers could operate, support, govern, and afford became a product.

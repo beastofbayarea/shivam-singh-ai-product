@@ -1,73 +1,63 @@
 # Giving wealth advisers a decision, not a churn score
 
-I led the redesign of a churn product for a large UK wealth manager during my Microsoft role. I saw that advisers could not act on a risk score they could not explain and did not want a model to replace their judgement. I worked with advisers, client-service leaders, compliance and privacy teams, data scientists, engineers, external specialists, operations, and executive sponsors.
+Adviser usage was below 5%. The churn model might have been statistically useful, but its product was a score with no action, no client-level evidence, and no explanation. An adviser still had to search at least five systems before deciding whether the alert mattered.
 
-## The model was accurate enough; the product was unusable
+During my Microsoft role, I led the redesign for a large UK wealth manager. I changed the objective from **predict churn** to **help an adviser choose an appropriate next action**. The model could prioritize; the adviser remained accountable for contact; compliance could reconstruct the evidence; the client was never subjected to an automated relationship action because a score crossed a threshold.
 
-Adviser use remained below 5%. A risk alert did not say what to do, exposed no client-level evidence, and forced an adviser to search at least five systems before deciding whether the signal mattered. The product added interpretation work to a time-constrained relationship role.
+## One card replaced five searches
 
-I changed the product objective from “predict churn” to “help an adviser choose an appropriate next action.” Predictive performance remained necessary, but the operating outcome became an informed, timely adviser decision followed by a recorded client response.
+Each recommendation carried:
 
-The redesign put me in charge of the wealth platform's decision journey: translate model output into an adviser action, make disagreement observable, alter the policy as COVID changed client needs, pair outside specialists with internal owners, and link millions of consumed recommendations to a controlled regional outcome rather than a vanity usage total. The £600,000 annualized value case was downstream of that operating system, not a multiplication of scores by account balances.
+1. a bounded action—call, review liquidity, discuss a life event, or offer service;
+2. the client-specific signals that moved the recommendation;
+3. dated source evidence from portfolio, service, digital, and CRM systems;
+4. uncertainty, stale or unavailable evidence, and alternative explanations;
+5. accept, change, defer, or dismiss controls; and
+6. a trace from display through adviser choice, contact, client response, and outcome.
 
-The redesign also changed who had authority. The model could prioritize and recommend. The adviser remained accountable for contact. Compliance could reconstruct the evidence and decision. The client was not subjected to an automated relationship action merely because a score crossed a threshold.
+[NIST’s Four Principles of Explainable AI](https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence) sharpened the design: explanations must provide reasons, mean something to the user, reflect the actual system, and acknowledge limits. The UK ICO and Alan Turing Institute’s [guidance on explaining AI-assisted decisions](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/) also treated explanation as a lifecycle capability. These were external benchmarks, not claims about the client’s legal determination.
 
-## Anatomy of one recommendation
+## The dismiss button found the roadmap
 
-Each card combined six elements:
+I required advisers to give a reason when they disagreed. A three-month sample showed:
 
-1. **Action:** a bounded suggestion such as call, review liquidity, discuss a life event, or offer service—not a vague “high risk” label.
-2. **Client-specific reasons:** which current signals changed the recommendation and in what direction.
-3. **Source evidence:** the underlying portfolio, service, digital, and CRM events with their dates and system of record.
-4. **Limits:** uncertainty, unavailable evidence, data freshness, and alternative explanations.
-5. **Human choice:** accept, change, defer, or dismiss.
-6. **Audit and outcome:** who saw the card, what they did, which reason they supplied, whether contact occurred, and what followed.
+- 35% of dismissals involved clients already contacted, revealing weekly CRM synchronization was too stale;
+- 22% reflected relationship or life-event context absent from financial data;
+- 8% involved deceased clients, exposing a missing mortality signal.
 
-[NIST’s Four Principles of Explainable AI](https://www.nist.gov/publications/four-principles-explainable-artificial-intelligence), published during the project period, sharpened the requirement. An explanation must provide reasons, be meaningful to its intended user, accurately reflect the system’s process, and respect knowledge limits. An attractive narrative that makes an adviser overconfident would fail that standard.
+The retained categories explain 65% of dismissals; I do not invent the remaining 35%.
 
-The UK Information Commissioner’s Office and Alan Turing Institute also published [guidance on explaining AI-assisted decisions](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/) in 2020. It treats explanation as a lifecycle concern: select appropriate explanation types, build the system to extract relevant information, translate rationale for the affected audience, and prepare implementers. I used it as a contemporaneous product benchmark, not as a statement of the client’s legal conclusion.
+Each reason produced a different product response. Stale state led to daily synchronization. Missing operating facts created new data or workflow requirements. Legitimate adviser disagreement became a reviewed example. A source defect did not become mislabeled model error.
 
-## The dismiss button became the best sensor
+False positives fell 18% in three months. The defensible measure is inapplicable recommendations / adjudicated positive recommendations for equivalent cohorts; the record does not retain counts or confidence intervals.
 
-I required reason-coded disagreement rather than a silent override. The retained three-month sample attributed:
+## COVID changed the action before the prediction
 
-- 35% of dismissals to clients already contacted, revealing a weekly CRM synchronization that was too stale;
-- 22% to relationship or life-event context missing from financial data; and
-- 8% to deceased clients, revealing a missing mortality signal.
+Before the pandemic, unusual cash accumulation could indicate impending asset movement. During the shock, it could instead mean fear, liquidity preference, or a need for reassurance. The same input no longer justified the same intervention.
 
-Those categories explain 65% of dismissals; the source does not account for the other 35%, so I do not imply a complete taxonomy.
+I changed the action policy from a sales response to an empathy-led check-in and moved monitoring and retraining to a weekly cadence. Drift review covered input distributions, outcome rates, calibration, dismissal reasons, segment performance, and adviser feedback. Stable AUC would not have proved stable usefulness.
 
-The product response depended on the cause. Stale state led to daily synchronization. Missing operating facts led to new inputs or prompts. A legitimate adviser disagreement became a labelled example for review. A data defect was not carelessly fed back as if it were model error.
+The Bank of England and FCA’s [AI Public-Private Forum report](https://www.bankofengland.co.uk/research/fintech/ai-public-private-forum%C2%A0) later organized financial-services AI risk around data, models, and governance; I use it as an external benchmark for the operating logic.
 
-False positives fell 18% within three months. To defend that result, the numerator must be recommendations later judged inapplicable, the denominator all adjudicated positive alerts, and the comparison made on equivalent cohorts. The retained source gives the change and window but not the counts or confidence interval.
+## The pilot followed the whole causal chain
 
-## COVID changed the action policy before it changed the algorithm
+Eligible clients were assigned through pilot and control regions. Measurement connected recommendation, adviser consumption, adviser decision, outreach, client response, churn, and retained economics. That stopped the team from treating generated or viewed recommendations as impact.
 
-Historical cash accumulation had indicated possible asset movement. During the pandemic it could instead mean fear, liquidity preference, or a request for reassurance. The same feature no longer justified the same intervention.
+| Outcome | Baseline → target → recorded result | Measurement method |
+|---|---|---|
+| Adviser adoption | <5% use → make recommendations operationally useful → final rate not retained | Eligible active advisers completing a meaningful card action / exposed advisers |
+| Client churn | control-region rate → lower in pilot → 12% lower | Pilot/control cohort outcome with pre-trend and mix checks; source does not retain relative-versus-point definition |
+| Preparation effort | time index 100 → halve multi-system work → 50 | Same client-review task boundary; recorded 50% reduction |
+| False positives | index 100 → reduce through feedback and fresher data → 82 after 3 months | Adjudicated inapplicable recommendations / positive recommendations |
+| Product volume | none stated → sustained workflow use → 11M recommendations consumed | Define consumed event, unique advisers/clients, period, and repeat frequency; volume is not adoption |
+| Protected value | counterfactual churn economics → positive annualized value → ~£600K | Incremental retained accounts × fee economics under pilot/control assumptions; modeled, not booked revenue |
 
-I moved the team to weekly monitoring and retraining during the shift, but more importantly changed the action policy from a sales-oriented response to an empathy-led check-in. Drift review looked at input distributions, outcome rate, calibration, reason patterns, segment performance, and adviser feedback. We did not assume that a stable headline AUC meant stable product usefulness.
+One case describes an adviser noticing falling liquidity and mortgage-page behavior, discovering refinancing plans, and retaining roughly £2 million in assets. I use it as an illustrative workflow, not causal proof or an amount to add to the £600,000 annualized model. AUM and revenue are different units.
 
-This aligns with the Bank of England and FCA’s [2022 AI Public-Private Forum report](https://www.bankofengland.co.uk/research/fintech/ai-public-private-forum%C2%A0), which organized financial-services AI challenges around data, model risk, and governance and emphasized safe adoption rather than accuracy alone.
+## Ownership that survived the build
 
-## How I measured whether the intervention worked
+External data scientists were paired with internal engineers so feature logic, monitoring, deployment, and feedback did not leave with the project. Advisers co-designed explanations and actions. Compliance defined the evidence and reconstruction need. Data owners fixed sources. Operations managed the new cadence.
 
-Eligible clients were assigned through pilot and control regions. I preserved the sequence from recommendation to adviser use, outreach, client response, churn, and retained economics. That prevented the team from calling an output valuable merely because it was generated.
+I owned the user research, action policy, recommendation interface, feedback taxonomy, pilot design, COVID response, cross-functional decisions, measurement chain, and handover model. I did not own an adviser’s judgment or label every retained relationship a model success.
 
-| Measure | Baseline | Recorded result | Interpretation and measurement |
-|---|---:|---:|---|
-| Adviser usage | <5% | final rate not retained | baseline exposed product failure; 11M consumed recommendations is a volume, not a rate |
-| Churn | control-region rate | 12% lower in pilot | source does not state relative versus percentage-point change; report as source-stated pilot difference pending cohort counts and pre-trend checks |
-| Client preparation time | baseline index 100 | index 50 | 50% reduction; minutes, task boundary, and distribution not retained |
-| False positives | baseline index 100 | index 82 after 3 months | 18% reduction; adjudication counts and interval absent |
-| Recommendations consumed | none stated | 11M | needs definition of “consumed,” unique advisers/clients, period, and repeat frequency |
-| Annual revenue protected | counterfactual pilot churn economics | about £600K | modeled annualized value tied to pilot; not identical to booked incremental revenue |
-
-One case in the source describes an adviser contacting a client about falling liquidity and mortgage-page activity, uncovering refinancing plans, and retaining roughly £2 million in assets. I treat that as an illustrative intervention, not proof the model caused the retention or an amount to add directly to the £600,000 annual revenue model. Assets under management and revenue are different measures.
-
-## Operating ownership after the build
-
-I paired each external data scientist with an internal engineer so feature logic, monitoring, deployment, and feedback did not leave with the consulting team. Advisers co-designed explanations and actions. Compliance defined evidence and review needs. Data owners fixed source quality. Product owned the decision journey and outcome account.
-
-I owned that product transformation: user research, action policy, recommendation card, feedback taxonomy, pilot design, drift response, cross-functional decisions, and handover model. I did not own the adviser’s client judgement or convert every retained relationship into a model win.
-
-The strategic outcome was an evidence-bearing next-best-action system that learned from accountable human disagreement. It made the prediction useful without disguising the model’s limits or surrendering the relationship decision to it.
+The product’s durable advantage was accountable disagreement. A useful next-best-action system did not hide uncertainty or replace the relationship; it gave the adviser enough evidence to act, enough control to refuse, and enough structure for every refusal to improve the system.

@@ -1,85 +1,69 @@
 # Building a retail-pricing system merchants could challenge
 
-I led product strategy for a national retailer’s pricing transformation at McKinsey. I saw that one seasonal, cost-plus process was overpricing visible essentials and leaving margin unused on less sensitive products. I worked with customers and merchants, category and marketing leaders, store and digital-channel teams, data scientists, engineers, finance, operations, and client executives.
+The retailer did not have a prediction shortage. It had a decision-production problem.
 
-## Historical sales could not answer the pricing question
+A seasonal, cost-plus process was overpricing visible essentials, leaving margin unused on less sensitive products, and taking six weeks to move an approved change consistently across stores and digital channels. Two years of historical data looked abundant, but price had barely varied; correlation could not reveal how demand would respond to a decision the business had rarely made.
 
-Two years of sales records appeared rich, but prices had barely moved. A model trained on that history could mistake “we did not vary price” for “demand does not respond to price.” Competitor changes, promotions, stockouts, seasonality, store mix, and cross-shopping further confounded the relationship.
+At McKinsey, I led the product strategy for the end-to-end pricing factory: experimental evidence, product roles, explainable recommendations, merchant authority, customer guardrails, cross-channel execution, continuous learning, and the executive bridge to a modeled $50 million opportunity.
 
-I would not optimize prices from that correlation. I introduced controlled store- and geography-level tests to create learnable variation. The design stratified locations by format and baseline sales, used A/A checks to detect pre-existing imbalance, set sample size and duration before reading the result, staggered windows around seasonal events, and excluded stockout periods where observed sales were supply-constrained.
+## First, manufacture evidence
 
-The analysis compared treatment and control changes, then challenged the estimate for competitor movement, promotion overlap, spillover to substitute products, basket effects, and placebo periods. This produced a causal elasticity estimate only within the tested price range and population; it was not a permanent property of a SKU.
+I would not optimize from static history. The team introduced store- and geography-level tests that stratified location by format and baseline sales, used A/A checks for imbalance, fixed sample and duration before reading results, staggered windows around seasonal events, and excluded stockout periods.
 
-## Every product needed an economic job
+Treatment/control change was then challenged for competitor movement, promotion overlap, substitution, basket effects, geographic spillover, and placebo periods. The result was a causal elasticity estimate inside the tested price range and population—not an eternal SKU attribute.
 
-I built a Python log-log regression layer above the legacy ERP because the coefficient had a meaning merchants could interrogate: the expected percentage change in unit demand for a percentage change in price, conditional on the model and test population.
+I selected a Python log-log regression layer above the legacy ERP because its coefficient had an interpretation merchants could interrogate: expected percentage unit-demand change for a percentage price change, conditional on the design and population. Rolling historical hindcasts tested stability across earlier windows, but could not replace live experiments where history contained no useful variation.
 
-I built the end-to-end decision factory behind the model: experimental evidence, product-role taxonomy, recommendation design, merchant authority, 500-item customer guardrails, cross-channel publication, a permanent learning sample, and the executive bridge to a $50 million opportunity. The product succeeded only if it could move from test to reconciled store and digital execution in under a week without turning forecast confidence into unilateral pricing authority.
+## Then, give each SKU a job
 
-I then made the recommendation portfolio-aware:
+The optimizer became portfolio-aware:
 
-- **Key value items:** visible, price-sensitive products that shaped customer value perception; keep competitive.
-- **Basket builders:** products whose direct margin understated profitable attachments; optimize the basket.
-- **Core category items:** balance volume, substitution, and category margin.
-- **Long-tail items:** lower visibility and sensitivity; capture defensible margin.
-- **Heritage or brand items:** reputationally sensitive; require stronger evidence and review.
+- **Key value items** protected customer price perception and traffic.
+- **Basket builders** were evaluated through attachment economics.
+- **Core category items** balanced unit volume, substitution, and category margin.
+- **Long-tail items** captured measured headroom.
+- **Heritage items** required stronger customer and brand evidence.
 
-That segmentation prevented the optimizer from maximizing every SKU independently. A low price on an essential could earn traffic and attachments; a selective long-tail increase could fund the proposition. Finance evaluated net category and basket economics rather than summing isolated model recommendations.
+This prevented independent SKU maximization. A lower price on an essential could attract a profitable basket; selective long-tail movement could fund the promise. Finance evaluated net category economics rather than summing isolated recommendations.
 
-## The guardrails were part of the product strategy
+## Product policy executed before optimization
 
-The engine protected brand and customer commitments before it optimized:
+The top 500 visible items could be locked during sensitive periods. Weekly movement was capped at ±5%. Approved private-label/national-brand ladders, stockout state, promotion, competitor shock, or channel conflict could block release. Store, web, and app prices had to reconcile before activation.
 
-- the top 500 high-visibility items were locked during sensitive periods;
-- weekly movement was capped at plus or minus 5%;
-- private-label and national-brand ladders had to preserve the approved tier relationship;
-- stockouts, promotions, competitor shocks, or channel conflicts could block release; and
-- point-of-sale, web, and app publication had to reconcile before a price became active.
+The system recommended a corridor with expected unit, basket, and margin effects; confidence and constraints remained visible. It never personalized price to an individual customer or presented mathematical optimality as an obligation.
 
-The system recommended a price corridor, expected volume and basket effect, confidence, and relevant constraints. It did not personalize price to an individual customer or present a mathematically optimal price as a business obligation.
+## One objection redesigned the interface
 
-## The heritage-product objection changed the interface
+When the engine proposed increasing the price of a beloved product, the chief merchant nearly stopped the pilot. The resistance was rational: a number had arrived without the experiment, customer implication, or policy context needed to judge it.
 
-The pilot nearly stopped after the engine recommended increasing the price of a beloved product. The chief merchant’s resistance was rational: the screen supplied a new price but no evidence, customer implication, or constraint.
+I rebuilt the output as a decision card:
 
-I rebuilt the recommendation as a glass-box decision card. It showed current and proposed price, estimated elasticity and uncertainty, experiment and recent history, the trigger for change, expected volume/basket/margin effect, competitor context, brand and ladder constraints, and an accountable override with a required reason.
+**current/proposed price + elasticity interval + experimental evidence + trigger + unit/basket/margin effect + competitor context + brand/ladder controls + accountable override**
 
-Reason review distinguished four conditions: the model was wrong, the data was stale, a business constraint was missing, or the merchant had information not yet captured. Casual overrides fell 50% after review began, and the source reports total overrides below 5% by month two. Those are different measures and should not be described as a 50%-to-5% funnel without the original override rate and denominators.
+Override reasons distinguished model error, stale data, missing constraints, and legitimate new merchant information. Casual overrides fell 50%; overall overrides were below 5% by month two. They have different baselines and are not a 50%-to-5% funnel.
 
-## The product factory changed the speed of action
+This interaction defined the product philosophy: the merchant did not “trust the model.” The merchant could challenge a legible recommendation, and disagreement became governed learning.
 
-The former workflow passed work sequentially among data, merchant, marketing, and channel teams. I formed a weekly pod around one pricing decision. The merchant set category intent; the data scientist defended the estimate; marketing reconciled promotions and customer message; operations checked inventory and channel readiness; engineering published only after automated gates passed.
+## The weekly decision factory
 
-Each increment had a named decision, eligible SKU population, treatment plan or evidence, guardrail, acceptance rule, publish path, and post-change measure. Rolling historical tests—hindcasts—checked stability across earlier periods and segments, but they did not replace live experiments where historical price variation was absent.
+I replaced sequential handoffs with a pod. The merchant set category intent; the data scientist defended evidence; marketing reconciled promotion and customer message; operations checked inventory and readiness; engineering published only after automated gates.
 
-The local approval-to-publication cycle fell from six weeks to under one week: at least five weeks faster and more than an 83.3% reduction. A separate program measure reports 30% faster speed to market. The scopes clearly differ; I retain the local workflow result and broader program result separately rather than pretending they are the same calculation.
+Every increment had a named decision, eligible population, treatment or evidence source, acceptance rule, guardrail, publish route, and post-change measure. Approval-to-publication fell from six weeks to under one—at least five weeks faster and more than an 83.3% reduction. A separate broader program measure recorded 30% faster speed to market; I keep the perimeters distinct.
 
-## Continuous learning after launch
+Daily sales, inventory, competitor, and promotion data refreshed recommendations. A rotating 1% SKU sample preserved exploration. Forecast error above 5% for two weeks triggered review. The 1% sample, 5% error trigger, and ±5% movement corridor are three controls with different denominators.
 
-Daily sales, inventory, competitor, and promotion data refreshed recommendations. A rotating 1% SKU sample maintained exploration so the model did not become another static seasonal table. Forecast versus actual was monitored by category; error above 5% for two weeks triggered review and potential retraining.
+## Executive product account
 
-That 5% control threshold should not be confused with causal certainty. Forecast accuracy asks how close predicted demand was to observed demand. Elasticity confidence asks how precisely an incremental price effect was estimated. A model can forecast well while being wrong about what a price change caused.
+| Product outcome | Baseline → target → recorded result | Measurement |
+|---|---|---|
+| Modeled value | existing architecture → opportunity inside constraints → $50M estimated | Eligible volume, counterfactual price, causal response, basket margin, cannibalization, realization bridge |
+| Decision cycle | 6 weeks → <1 week → <1 week | Approval to reconciled omnichannel publication |
+| Broader delivery speed | index 100 → accelerate → 70 | Original broader-program denominator; 30% faster |
+| Forecast performance | baseline absent → useful operating accuracy → 95% | Named error metric, horizon, weighting, stockout treatment; not causal confidence |
+| Adoption | override baseline absent → sustained use → <5% by month 2 | Overridden / eligible recommendations by reason and economic consequence |
+| Learning coverage | no permanent test cell → ongoing exploration → 1% rotating sample | Random assignment, power, harm, and stop rules |
+| Customer protection | unconstrained movement → explicit policy → top 500 locks and ±5% cap | Policy adherence, exceptions, and price-perception outcome |
 
-## The financial and operating account
+I owned the product factory: problem framing, experimentation standard, SKU roles, interface, guardrails, pod model, learning loop, merchant adoption, and value account. Data science owned estimation; merchants retained judgment; marketing owned promotion coherence; operations and technology owned publication integrity; finance owned realized economics.
 
-| Claim | Starting point | Recorded result | What I would show to substantiate it |
-|---|---:|---:|---|
-| Revenue opportunity | existing price architecture | estimated $50M | eligible volume, counterfactual prices, demand response, basket margin, cannibalization, and realization bridge; this is opportunity, not booked incremental revenue |
-| Local price-change cycle | 6 weeks | <1 week | approval timestamp to reconciled channel publication; >83.3% reduction |
-| Broader speed to market | index 100 | index 70 | source-reported 30% improvement on the broader program denominator |
-| Forecast accuracy | not retained | 95% | metric must be named—such as one minus weighted MAPE—with forecast horizon, SKU weighting, and stockout treatment |
-| Overrides | not retained | <5% by month 2 | overridden eligible recommendations / recommendations reviewed, split by reason and economic effect |
-| Exploration | no permanent test cell | 1% rotating sample | eligible SKUs randomly assigned with exposure, power, stop, and guardrail rules |
-| Weekly price movement | unconstrained process | ±5% cap | policy control, not a business outcome |
-
-## My role in the decision system
-
-I owned the problem framing, experimentation standard, product-role taxonomy, recommendation interface, guardrails, pod operating model, learning loop, merchant adoption, and executive value account. Data scientists owned estimation. Merchants retained category judgement. Marketing owned promotion coherence. Operations and technology owned publication integrity. Finance owned realized economics.
-
-The strategic result was not “an algorithm set prices.” It was a transparent loop that created causal evidence, translated it into portfolio strategy, allowed accountable challenge, protected customer value perception, and learned after every decision. That is why the product could move faster without equating speed with unreviewed automation.
-
-## Research context
-
-- The retained project record supplies the experiment design, portfolio roles, guardrails, override behavior, operating changes, and economic figures.
-- [Tashman: Out-of-sample tests of forecasting accuracy](https://doi.org/10.1016/S0169-2070(00)00065-0) — methodological basis for rolling-origin historical evaluation rather than one in-sample fit.
-- [McKinsey Global Institute: Big data—the next frontier for innovation, competition, and productivity](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) — contemporaneous industry context for analytics-led retail value and operating-model change.
+The result was not an algorithm that set prices. It was an operating system that created evidence, converted it into a constrained portfolio decision, exposed its reasoning, allowed accountable dissent, executed consistently, and learned from the market.
