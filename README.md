@@ -34,7 +34,6 @@ Stories are grouped by their primary resume experience in reverse chronological 
 - [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md) - evaluation, observability, and production quality
 - [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) - secure-by-design enterprise agent architecture
 - [Customer data platform: real-time intent](./projects/customer-data-platform-real-time-intent.md) - streaming customer intelligence and activation
-- [Veeqo: merchant assurance platform strategy](./projects/veeqo-merchant-assurance-platform-strategy.md) - platform strategy for merchant confidence and adoption
 
 ### Rakuten Group, Inc.
 
