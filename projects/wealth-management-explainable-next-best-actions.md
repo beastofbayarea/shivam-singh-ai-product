@@ -8,6 +8,8 @@ Adviser use remained below 5%. A risk alert did not say what to do, exposed no c
 
 I changed the product objective from “predict churn” to “help an adviser choose an appropriate next action.” Predictive performance remained necessary, but the operating outcome became an informed, timely adviser decision followed by a recorded client response.
 
+I owned the redesign at wealth-platform scale: translate model output into an adviser decision, make disagreement observable, alter the action policy as COVID changed client needs, pair outside specialists with internal owners, and link millions of consumed recommendations to a controlled regional outcome rather than a vanity usage total. The £600,000 annualized value case was downstream of that operating system, not a multiplication of scores by account balances.
+
 The redesign also changed who had authority. The model could prioritize and recommend. The adviser remained accountable for contact. Compliance could reconstruct the evidence and decision. The client was not subjected to an automated relationship action merely because a score crossed a threshold.
 
 ## Anatomy of one recommendation

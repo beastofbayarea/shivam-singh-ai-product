@@ -8,6 +8,8 @@ Thousands of statements, notices, filings, and deal documents flowed through 15 
 
 I defined the product output as a typed, validated, attributable fact—not a page of recognized characters. A number such as “12.4” had no decision value until the system knew its entity, unit, period, table relationship, source location, document version, and review state.
 
+I owned the platform boundary across 15 investment and operations teams: which document classes shared infrastructure, which fields required human judgment, what a confidence score could authorize, how every extracted fact remained traceable, and when lower processing cost was worth the risk of a silent error. That changed automation from faster transcription into a governed information supply chain for investment decisions.
+
 That led to a field lifecycle:
 
 `received → classified → located → extracted → normalized → validated → auto-published or reviewed → consumed → corrected/superseded`

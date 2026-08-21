@@ -8,6 +8,8 @@ Regulated organizations were not choosing between AI and no AI. They were choosi
 
 I defined a demanding product thesis: the compliant route had to remove more friction than the shadow route while making identity, data use, action, and accountability visible. A policy that merely prohibited public AI would not satisfy the user’s job.
 
+I owned the platform bet at enterprise scale: lead more than 15 engineers, turn fragmented security services into one deployable path, make private-system access and persistent state usable, and hold releases behind evidence strong enough for clinical and banking risk owners. The reported operating perimeter—more than 5,000 regulated tenants and $20 million in supported contracts—made setup time, isolation, monitoring, and customer-controlled data boundaries commercial product decisions, not backend details.
+
 ## The contract of a governed agent
 
 I treated an agent as a principal with bounded authority, not as a chatbot with a system prompt. A deployable agent needed all of the following:

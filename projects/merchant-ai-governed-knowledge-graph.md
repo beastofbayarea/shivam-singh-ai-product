@@ -8,6 +8,8 @@ The initial common experience was a chatbot. Usage showed that it merely moved w
 
 I stopped treating conversation as the product. The user jobs were concrete: create a product description, prepare an image, understand reviews, answer a customer, or interpret store performance. The platform should already know the permitted store, catalogue, policy, and workflow context, then let the merchant review the result where the work was performed.
 
+I owned the product architecture that could make those jobs reusable across an ecosystem of more than 70 services and an eligible population above 50,000 merchants without pretending that shared context meant shared access. The strategic decision was to build the identity, provenance, permission, retrieval, and workflow layer Rakuten could differentiate; partner for commodity model capability; and delay cross-service monetization until the control model could defend it.
+
 That reversal separated two product layers:
 
 - **Partner for general model capability:** language generation and broad reasoning could be sourced and changed over time.
