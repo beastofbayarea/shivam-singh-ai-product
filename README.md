@@ -1,5 +1,15 @@
 # Shivam Singh — AI & Data Product Management
 
+## Tell me about yourself
+
+**Q: Tell me about yourself / walk me through your background.**
+
+**A:** I am an AI and data product leader who has spent my career turning complex analytical systems into products people can trust and operate. I started at McKinsey in digital, analytics, and FinTech strategy, where I learned to begin with the customer decision and business model rather than the technology. At D. E. Shaw, I moved closer to product execution, building intelligent document and data workflows in an environment where provenance, precision, and human review directly affected investment operations.
+
+At Microsoft, I led cloud-data and lifecycle-intelligence products, including an explainable next-best-action experience for wealth advisers. That work reinforced that model accuracy is not enough: a product also needs useful context, a clear action, evidence, feedback, and accountable human judgment. During my MBA role at Rakuten, I stopped a generic merchant chatbot and redirected the strategy toward embedded merchant jobs backed by a governed knowledge graph. At AWS, my work has centered on enterprise GenAI production readiness and secure agent platforms—reliability, identity, permissions, private connectivity, evaluation, observability, and cost.
+
+Across those experiences, the progression has been from analytical strategy to workflow products to enterprise AI platforms. I am most effective where powerful technology is still separated from dependable customer value. I define the product boundary, make the hard roadmap trade-offs, align Engineering, Risk, Sales, and Operations, and create the promotion and measurement system that lets an AI product earn production authority.
+
 I build AI products as decision systems: not isolated models, but combinations of trusted context, bounded authority, reliable execution, human judgment, and measurable economic outcomes.
 
 [Resume](./shivam-singh-ai-product.pdf) · [LinkedIn](https://www.linkedin.com/in/beastofbayarea) · [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
