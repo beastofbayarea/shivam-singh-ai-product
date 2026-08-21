@@ -33,7 +33,6 @@ Stories are grouped by their primary resume experience in reverse chronological 
 - [Financial-services agent platform: governed workflows](./projects/financial-services-agent-platform-governed-workflows.md) - controlled agentic workflows for regulated operations
 - [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md) - evaluation, observability, and production quality
 - [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) - secure-by-design enterprise agent architecture
-- [Customer data platform: real-time intent](./projects/customer-data-platform-real-time-intent.md) - streaming customer intelligence and activation
 - [Veeqo: merchant assurance platform strategy](./projects/veeqo-merchant-assurance-platform-strategy.md) - platform strategy for merchant confidence and adoption
 
 ### Rakuten Group, Inc.
