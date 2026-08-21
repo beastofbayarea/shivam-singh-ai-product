@@ -1,56 +1,28 @@
-# Enterprise GenAI Platform — Production Reliability Turnaround
+# Enterprise GenAI Platform - Production Reliability Turnaround
 
-> **Portfolio lens:** Enterprise AI roadmap, production readiness, platform reliability, model observability, and unit economics.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is used only to place this case within the AWS role dated July 2024-present.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Reset an enterprise GenAI roadmap after feature work diverged from production adoption. A maturity model, LLM-specific scaling signals, workflow-readiness gates, and reliability-first prioritization turned the platform from fragile demos into real-time enterprise infrastructure.
+The AWS Well-Architected Reliability Pillar emphasizes foundations, failure isolation, monitoring, recovery, and tested operations. NIST's GenAI Profile adds model-specific governance and measurement. These sources support treating a GenAI product as a full production system whose retrieval, models, policies, dependencies, and user outcomes need separate observability and release gates.
 
-## Resume-ready impact
+## Case approach
 
-- Redirected an enterprise GenAI roadmap after 90% of deployments remained in test and 70% of lost deals cited reliability rather than missing features.
-- Introduced queue-depth and time-per-token scaling, warm capacity, deployment standards, integration gates, and a four-level production-readiness ladder.
-- Reduced inference latency from three to five seconds to under 800 ms, lowered training cost 22%, and increased engagement 25%.
+- Define service objectives for availability, latency, factuality, safety, and recovery.
+- Instrument retrieval, generation, policy checks, dependencies, and user-visible failures separately.
+- Use staged releases, automated rollback, playbooks, post-incident learning, and adversarial evaluation.
+- Prioritize failure modes by user harm and business criticality rather than aggregate uptime alone.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use objective attainment, factuality, policy escapes, dependency failure containment, recovery time, rollback quality, and repeat-incident rate. These are proposed measures, not historical results.
 
-Customers saw strong demonstrations but faced slow inference, multi-minute brownouts, missing connectors, unclear controls, and workflows that were not operationally ready.
+## External source map
 
-### Task
-
-Reorient product success from features shipped to reliable customer workflows running in production.
-
-### Actions
-
-- Paused lower-priority feature expansion and consolidated the roadmap around reliability, integration, governance, and customer maturity.
-- Replaced CPU-only autoscaling with demand signals tied to the actual LLM experience.
-- Defined readiness across process ownership, data quality, connectors, monitoring, governance, and incident response.
-- Used account maturity signals to trigger targeted integration workshops and prioritize recurring blockers.
-
-### Results
-
-- Inference latency fell below 800 ms.
-- Training costs declined 22%.
-- Engagement increased 25%.
-- The platform became viable for real-time enterprise workflows and gained a clearer reliability-led enterprise value proposition.
-
-## Decisions and trade-offs
-
-- Defer a requested voice feature until existing text failures were stabilized.
-- Carry some idle buffer capacity to eliminate cold starts for priority workloads.
-- Treat workflow readiness as part of the product, not a customer implementation detail.
-
-## Leadership signal
-
-Connected leadership, engineering, sales, and customer success around observable production outcomes, converting reliability work from an internal concern into a commercial differentiator.
-
-## Skills and keywords
-
-GenAI platform · product roadmap · production readiness · model observability · autoscaling · SLOs · MLOps · platform economics · enterprise adoption · reliability
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/159f9e255f21804ab454e85b4acc4b8f)
-
+| Source | Contribution |
+|---|---|
+| [AWS - Well-Architected Reliability Pillar (2024)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) | Primary reliability, monitoring, recovery, and testing methodology. |
+| [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) | Primary GenAI lifecycle-risk and evaluation framework. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Work dates only. |

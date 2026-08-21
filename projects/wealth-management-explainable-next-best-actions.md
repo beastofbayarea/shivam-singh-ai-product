@@ -1,56 +1,28 @@
-# Wealth Management Churn — Explainable Next-Best Actions
+# Wealth Management - Explainable Next-Best Actions
 
-> **Portfolio lens:** Explainable ML product design, workflow adoption, human feedback, model governance, and measurable retention.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is used only to place this case within the Microsoft role dated January 2020-August 2022.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Redesigned an accurate but unused churn model into a prescriptive advisor product. Each recommendation supplied a next action, plain-language reasons, source evidence, auditability, and a structured feedback path so human disagreement improved the model and operating data.
+NISTIR 8312 distinguishes explanation from explainability and identifies principles including meaningful, accurate, and knowledge-limited explanations. The NIST Privacy Framework addresses privacy risk created by products and services that process personal data. Together they support advisory recommendations that show evidence, uncertainty, and limits while minimizing unnecessary data use.
 
-## Resume-ready impact
+## Case approach
 
-- Shifted a churn product from unexplained scores to explainable next-best actions, driving consumption of 11M recommendations after advisor usage had remained below 5%.
-- Introduced reason-coded dismissals that exposed stale CRM data, missing mortality signals, and life-event gaps, reducing false positives 18% in three months.
-- Reduced pilot churn 12%, cut client-preparation time 50%, and protected approximately £600K in annual revenue.
+- Define the client outcome and restrict features to data necessary for that purpose.
+- Present recommendation drivers, evidence, uncertainty, alternatives, and reasons for abstention.
+- Separate model suggestions from adviser decisions and record overrides with rationale.
+- Test explanation usefulness with intended users, not only technical reviewers.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use explanation accuracy, adviser comprehension, inappropriate-action rate, override quality, privacy incidents, and client-outcome monitoring. These are proposed measures, not historical results.
 
-Advisors had to search five systems to interpret a risk score and feared the model would replace judgment. COVID-19 also changed the meaning of previously predictive signals, increasing drift risk.
+## External source map
 
-### Task
-
-Turn prediction into trusted action inside the advisor workflow while preserving compliance evidence, human accountability, and ongoing learning.
-
-### Actions
-
-- Added recommended actions, local explanations, source evidence, and audit records to every alert.
-- Made dismissals structured feedback rather than silent rejection and fed negative examples into product and data improvements.
-- Changed action policy and retraining cadence as pandemic behavior altered the meaning of cash accumulation.
-- Paired external data scientists with internal engineers to build sustainable ownership.
-
-### Results
-
-- The system recorded 11M consumed recommendations.
-- Pilot churn fell 12%, and client-preparation time fell 50%.
-- False positives declined 18% within three months.
-- The pilot protected approximately £600K in annual revenue.
-
-## Decisions and trade-offs
-
-- Optimize for advisor action and retained relationships, not model AUC alone.
-- Treat human override as a learning channel rather than product failure.
-- Adapt the action policy when behavior regimes change, not only the predictive model.
-
-## Leadership signal
-
-Co-designed with advisors, translated explainability into compliance evidence, and connected product usage to a controlled business outcome rather than claiming value from model output.
-
-## Skills and keywords
-
-explainable AI · next-best action · churn prediction · human-in-the-loop · model drift · feedback loops · workflow adoption · responsible AI · retention · revenue protection
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2faf9e255f2180d586bde172af65dcae)
-
+| Source | Contribution |
+|---|---|
+| [NIST - Four Principles of Explainable Artificial Intelligence (2021)](https://doi.org/10.6028/NIST.IR.8312) | Primary explainability principles and limitations. |
+| [NIST - Privacy Framework 1.0 (2020)](https://www.nist.gov/privacy-framework/privacy-framework) | Primary privacy-risk and data-governance framework. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Work dates only. |

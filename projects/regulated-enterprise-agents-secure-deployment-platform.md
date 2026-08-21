@@ -1,56 +1,28 @@
-# Regulated Enterprise Agents — Secure Deployment Platform
+# Regulated Enterprise Agents - Secure Deployment Platform
 
-> **Portfolio lens:** Responsible AI product design, private deployment, agent identity, observability, and regulated-enterprise adoption.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is used only to place this case within the AWS role dated July 2024-present.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Built a secure golden path for stateful, tool-using enterprise agents. The platform standardized private networking, zero retention, customer-owned payload logs, persistent state, permissioned tools, explicit agent identities, and human checkpoints while keeping setup practical.
+NIST's GenAI Profile addresses risks created or amplified by generative systems. NIST Zero Trust Architecture removes implicit trust based on network location and favors least-privilege, per-request decisions. Combined, they support an agent platform with scoped identities, bounded tools, policy enforcement, evidence, and human approval for consequential actions.
 
-## Resume-ready impact
+## Case approach
 
-- Led a secure agent-platform strategy that onboarded more than 5,000 regulated tenants and supported $20M in contracts with zero recorded data-exfiltration events.
-- Directed a 15+ engineer squad to standardize permissioned remote-tool connections, reducing private-system integration from weeks to minutes.
-- Reduced unauthorized public-AI usage roughly 70% by making the approved platform both safer and easier to adopt.
+- Assign distinct identities and least-privilege permissions to users, agents, tools, and data sources.
+- Define allowed actions, prohibited actions, approval thresholds, and evidence retention per workflow.
+- Test prompt injection, tool misuse, data leakage, privilege escalation, and failure recovery before release.
+- Offer regulated buyers traceability, policy configuration, and controlled deployment as product capabilities.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use unauthorized-action rate, policy coverage, approval accuracy, trace completeness, containment time, and successful recovery. These are proposed measures, not historical results.
 
-Regulated enterprises were caught between uncontrolled employee use of public AI and internal tools that were too complex. Agents lost state, voice latency approached three seconds, and private systems lacked a safe standard connection.
+## External source map
 
-### Task
-
-Create a production-ready platform that preserved privacy, identity, observability, performance, and usability without centralizing sensitive customer payloads.
-
-### Actions
-
-- Separated customer-owned prompt, response, and tool traces from provider-owned operational metadata.
-- Designed every agent as a governed digital identity with explicit data, action, and budget boundaries.
-- Delayed code execution for 30 days until sandbox isolation was proven.
-- Introduced a single launchpad template after customer feedback showed the initial three-service setup was too complex.
-
-### Results
-
-- More than 5,000 regulated tenants onboarded.
-- The platform supported $20M in contracts and recorded zero exfiltration events.
-- Shadow-AI usage declined approximately 70%.
-- Selected workflows reduced bank contract-audit time from weeks to days, increased output 60%, and saved clinicians about two hours per day.
-
-## Decisions and trade-offs
-
-- Make the safest deployment path the default and simplest journey.
-- Delay an irreversible code-execution risk while preserving reversible product progress.
-- Retain sensitive payloads inside the customer perimeter and debug with metadata plus sanitized reproductions.
-
-## Leadership signal
-
-Balanced product velocity, security, enterprise usability, and customer trust across engineers, risk teams, administrators, and regulated buyers.
-
-## Skills and keywords
-
-responsible AI · agent platform · private networking · zero retention · agent identity · tool permissions · observability · sandboxing · enterprise security · product adoption
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2f8f9e255f2180189834effdd0f53296)
-
+| Source | Contribution |
+|---|---|
+| [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) | Primary GenAI risk, governance, and evaluation foundation. |
+| [NIST - Zero Trust Architecture (2020)](https://doi.org/10.6028/NIST.SP.800-207) | Primary least-privilege identity and access architecture. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Work dates only. |
