@@ -46,6 +46,22 @@ The product decision was not whether an agent could call a tool. It was who coul
 
 [The retail analytics product factory](./projects/retail-analytics-product-factory-agile-hindcasting.md) solved the opposite problem: historical prices could not reveal demand response. Controlled store tests manufactured evidence; SKU economic roles and customer guardrails constrained optimization; merchant evidence cards and overrides preserved accountable judgment. The publish cycle fell from six weeks to under one, overrides were below 5% by month two, and a rotating 1% sample kept the system learning.
 
+## Ownership story — regulated enterprise agents
+
+**Q: Tell me about a product you owned end to end.**
+
+**A:** I owned the product strategy and operating contract for a regulated enterprise-agent platform that grew from no tenants on the new path to more than 5,000 and supported $20 million in commercial scope.
+
+In discovery, customers were not asking for a more capable model. Their job was to deploy a stateful, tool-using agent inside existing identity, network, data, approval, and audit boundaries. Interviews and blocked deployments exposed six recurring limitations: private connectivity took weeks, task state was fragmented, tools lacked consistent permissioning, human review was bolted on, execution was insufficiently isolated, and traces mixed sensitive reasoning with operational evidence. Our advantage was the ability to turn those controls into one managed cloud path rather than asking every customer to assemble them.
+
+I used a Double Diamond process. In **discover**, I combined customer blockers, security reviews, architecture patterns, support cases, and shadow-deployment behavior. In **define**, I wrote the deployable-agent contract: enterprise identity, private runtime, persistent task state, permissioned tool, policy or person, and customer-owned trace. I also made two deliberate roadmap vetoes—no blanket autonomy and no observability model that exposed sensitive reasoning by default.
+
+In **develop**, Engineering evaluated runtime, networking, state, sandbox, and tracing options through RFCs. I used the PRD as a living product contract, captured hard-to-reverse permission and trace choices as ADRs, and made workflow risk determine approval depth. In **deliver**, the launch-readiness checklist required identity tests, private-path evidence, tool scopes, human checkpoints, rollback, incident ownership, cost limits, support readiness, and customer acceptance before promotion.
+
+I measured the product across the whole funnel rather than counting created agents. Acquisition was qualified regulated demand; activation was a first grounded, permissioned workflow; retention was repeated successful operation with bounded incidents and cost; expansion was additional tools or business workflows; revenue was supported contract scope. Private-system connection moved from weeks to minutes. One bank audit workflow moved from weeks to days and recorded 60% more output; one clinical deployment saved roughly two hours per clinician per day. I kept those workflow results scoped rather than extrapolating them across all tenants.
+
+The central trade-off with Engineering was immediate customer need versus scalable architecture. We used temporary enablement for one-off blockers, but built reusable identity, state, permission, isolation, and trace primitives for repeated needs. I owned the customer problem, product boundary, priorities, launch gates, adoption model, and outcome account; Engineering owned implementation, Risk retained approval, and customers retained workflow authority. End to end meant carrying the product from an unsafe shadow alternative to a repeatable production and commercial system.
+
 ## My product standard
 
 Across AWS, Rakuten, Microsoft, D. E. Shaw, and McKinsey, I have owned product definitions, roadmap trade-offs, launch and promotion gates, evaluation systems, data and permission contracts, adoption loops, and executive outcome accounts. Engineering, Risk, Sales, Operations, and customers retain their own authority; good product leadership makes those boundaries executable.
