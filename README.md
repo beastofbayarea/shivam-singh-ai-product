@@ -14,7 +14,7 @@ That leads me naturally into questions about retrieval, evaluation, permissions,
 
 ## Projects, from newest to oldest
 
-The files below go beyond a one-line summary. I explain how I framed each problem, made trade-offs, organized delivery, and measured value. Independent external sources inside each project provide the market and methodological foundation.
+The files below go beyond a one-line summary. Each is reconstructed independently around its users, product decision, technology, commercial context, operating constraints, and evidence. The source notes distinguish internal records, public company facts, external methods, modeled value, observed results, later developments, and unresolved measurement gaps.
 
 ### Amazon Web Services (AWS)
 
@@ -22,11 +22,11 @@ The files below go beyond a one-line summary. I explain how I framed each proble
 
 #### [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md)
 
-I reset an enterprise GenAI roadmap after feature work diverged from production adoption. A maturity model, LLM-specific scaling signals, workflow-readiness gates, and reliability-first prioritization turned the platform from fragile demos into real-time enterprise infrastructure.
+I reset an enterprise GenAI roadmap after feature delivery diverged from production use. A four-state maturity model, workflow gates, queue- and generation-aware scaling, and an explicit reliability-versus-feature decision moved the product toward real-time use; the account reports the final production-conversion rate as missing rather than implying every test deployment advanced.
 
 #### [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md)
 
-I built a secure golden path for stateful, tool-using enterprise agents. The platform standardized private networking, zero retention, customer-owned payload logs, persistent state, permissioned tools, explicit agent identities, and human checkpoints while keeping setup practical.
+I made the approved path for stateful, tool-using enterprise agents easier than the shadow alternative. The product contract covered user and agent identity, private connectivity, state, permissioned tools, human checkpoints, isolated execution, and split observability; the account separates internal evidence from AWS’s later public AgentCore launch and treats zero recorded exfiltration as a bounded observation.
 
 ### Rakuten Group, Inc.
 
@@ -34,7 +34,7 @@ I built a secure golden path for stateful, tool-using enterprise agents. The pla
 
 #### [Merchant AI: governed knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md)
 
-I built a shared AI and data platform across more than 70 businesses and 50,000 merchants. The strategy partnered for foundation-model intelligence while investing internally in a governed knowledge graph, hybrid retrieval, privacy controls, and task-specific merchant experiences.
+I stopped a generic merchant chatbot and moved AI into listing, review, and image jobs backed by governed context. The account corrects “70 businesses” to Rakuten’s public “70+ services,” treats internal adoption and conversion figures with their missing denominators, and does not claim the merchant product that publicly launched after my internship.
 
 ### Microsoft Corporation
 
@@ -42,7 +42,7 @@ I built a shared AI and data platform across more than 70 businesses and 50,000 
 
 #### [Wealth management: explainable next-best actions](./projects/wealth-management-explainable-next-best-actions.md)
 
-I redesigned an accurate but unused churn model into a prescriptive advisor product. Each recommendation supplied a next action, plain-language reasons, source evidence, auditability, and a structured feedback path so human disagreement improved the model and operating data.
+I redesigned an accurate but unused churn model into an adviser decision product with an action, client-specific reasons, source evidence, limits, human choice, and an audit trail. A controlled regional pilot, reason-coded disagreement, and a COVID-era action-policy reset linked the model to client outcomes while keeping assets, annualized revenue protection, and causal claims separate.
 
 ### The D. E. Shaw Group
 
@@ -50,7 +50,7 @@ I redesigned an accurate but unused churn model into a prescriptive advisor prod
 
 #### [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md)
 
-I built an intelligent document-processing platform that turned complex financial documents into structured, auditable data. The product automated only high-confidence fields, routed uncertainty to humans, and converted every correction into training data.
+I built an intelligent document-processing platform that treated each extracted field as a typed, validated, attributable fact. The rewrite distinguishes a 0.98 routing threshold from 98% accuracy, routes reviewed corrections through governed training data, and removes a $25M financing outcome that public chronology places after my tenure.
 
 ### McKinsey & Company
 
@@ -58,4 +58,4 @@ I built an intelligent document-processing platform that turned complex financia
 
 #### [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md)
 
-I converted a national retailer's slow analytics workflow into a product-style delivery system. I introduced Agile Pod delivery and hindcasting-based validation, reducing analytics speed-to-market from six weeks to less than one week while improving stakeholder adoption through transparent model review.
+I built a retail-pricing decision system when static historical prices could not reveal demand response. Controlled store tests, interpretable elasticity, SKU economic roles, customer guardrails, merchant evidence and overrides, weekly pods, and continuous exploration reduced the local publish cycle from six weeks to under one while keeping a $50M opportunity estimate distinct from realized revenue.
