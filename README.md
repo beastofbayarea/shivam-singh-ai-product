@@ -24,16 +24,24 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 ## Project interview stories
 
-Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page. The primary resume experience identifies the work-history anchor whose stated scope and evidence best support the story.
 
 - [Financial-services agent platform: governed workflows](./projects/financial-services-agent-platform-governed-workflows.md) - controlled agentic workflows for regulated operations
+  - **Primary resume experience:** Amazon Web Services (AWS) - Director, AI and Data Platform Product Management (July 2024 - Present)
 - [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md) - evaluation, observability, and production quality
+  - **Primary resume experience:** Amazon Web Services (AWS) - Director, AI and Data Platform Product Management (July 2024 - Present)
 - [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) - secure-by-design enterprise agent architecture
+  - **Primary resume experience:** Amazon Web Services (AWS) - Director, AI and Data Platform Product Management (July 2024 - Present)
 - [Merchant AI: governed knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md) - trusted merchant intelligence and governed recommendations
+  - **Primary resume experience:** Rakuten Group, Inc. - Senior Product Manager, GenAI and Merchant Platform - MBA Intern (June 2023 - December 2023)
 - [Customer data platform: real-time intent](./projects/customer-data-platform-real-time-intent.md) - streaming customer intelligence and activation
+  - **Primary resume experience:** Amazon Web Services (AWS) - Director, AI and Data Platform Product Management (July 2024 - Present)
 - [Wealth management: explainable next-best actions](./projects/wealth-management-explainable-next-best-actions.md) - explainable AI for advisor workflows and retention
+  - **Primary resume experience:** Microsoft Corporation - Senior Product Manager, Cloud Data and Lifecycle Intelligence (January 2020 - August 2022)
 - [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) - document automation with human review and controls
+  - **Primary resume experience:** The D. E. Shaw Group - Vice President, Data and Intelligent Automation Product (July 2016 - December 2019)
 - [Veeqo: merchant assurance platform strategy](./projects/veeqo-merchant-assurance-platform-strategy.md) - platform strategy for merchant confidence and adoption
+  - **Primary resume experience:** Amazon Web Services (AWS) - Director, AI and Data Platform Product Management (July 2024 - Present)
 
 ## Profile
 
