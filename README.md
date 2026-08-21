@@ -2,6 +2,11 @@
 
 Role-targeted resume for building and scaling AI products, agentic workflows, responsible AI systems, and enterprise data platforms.
 
+## Profile
+
+- Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
+- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
+
 ## Resume formats
 
 - [View the PDF](./shivam-singh-ai-product.pdf)
@@ -57,7 +62,3 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md) - cross-functional product delivery, historical validation, transparent model review, and faster analytics releases
 
-## Profile
-
-- Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
-- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
