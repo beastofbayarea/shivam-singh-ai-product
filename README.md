@@ -54,6 +54,12 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) - document automation with human review and controls
 
+### McKinsey & Company
+
+**Product Strategy Associate - Digital, Analytics & FinTech** | 2014 - 2016
+
+- [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md) - cross-functional product delivery, historical validation, transparent model review, and faster analytics releases
+
 ## Profile
 
 - Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
