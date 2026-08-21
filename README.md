@@ -2,6 +2,11 @@
 
 Role-targeted resume for building and scaling AI products, agentic workflows, responsible AI systems, and enterprise data platforms.
 
+## Profile
+
+- Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
+- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
+
 ## Resume formats
 
 - [View the PDF](./shivam-singh-ai-product.pdf)
@@ -24,17 +29,14 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 ## Project interview stories
 
-Stories are grouped by their primary resume experience in reverse chronological order. Each project includes resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+Stories are grouped by their primary resume experience in reverse chronological order. Each file is an externally grounded interview case reconstruction: independent methodology, regulatory, and market sources support the content, while the resume is used only for work dates. The files do not claim independently verified engagement results.
 
 ### Amazon Web Services (AWS)
 
 **Director, AI and Data Platform Product Management** | July 2024 - Present
 
-- [Financial-services agent platform: governed workflows](./projects/financial-services-agent-platform-governed-workflows.md) - controlled agentic workflows for regulated operations
 - [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md) - evaluation, observability, and production quality
 - [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md) - secure-by-design enterprise agent architecture
-- [Customer data platform: real-time intent](./projects/customer-data-platform-real-time-intent.md) - streaming customer intelligence and activation
-- [Veeqo: merchant assurance platform strategy](./projects/veeqo-merchant-assurance-platform-strategy.md) - platform strategy for merchant confidence and adoption
 
 ### Rakuten Group, Inc.
 
@@ -54,7 +56,9 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) - document automation with human review and controls
 
-## Profile
+### McKinsey & Company
 
-- Email: [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
-- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
+**Product Strategy Associate - Digital, Analytics & FinTech** | 2014 - 2016
+
+- [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md) - cross-functional product delivery, historical validation, transparent model review, and faster analytics releases
+

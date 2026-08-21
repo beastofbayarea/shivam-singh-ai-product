@@ -1,56 +1,28 @@
-# Investment Operations — Intelligent Document Processing
+# Investment Operations - Intelligent Document Processing
 
-> **Portfolio lens:** Intelligent automation, confidence-gated AI, human feedback, data lineage, and reusable platform design.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is used only to place this case within the D. E. Shaw role dated July 2016-December 2019.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Built an intelligent document-processing platform that turned complex financial documents into structured, auditable data. The product automated only high-confidence fields, routed uncertainty to humans, and converted every correction into training data.
+NIST SP 800-53 Revision 4 provided security and privacy controls for access, audit, integrity, contingency, and system acquisition during this period. COSO's 2013 framework emphasizes reliable information and effective controls. Together they support document automation that preserves provenance, exception ownership, human approval, and auditability.
 
-## Resume-ready impact
+## Case approach
 
-- Led an intelligent document-processing platform across 15 global teams, reducing financial-document ingestion from hours to seconds and processing cost roughly 70%.
-- Replaced basic OCR near 80% accuracy with semantic extraction and a 98% confidence threshold for automated passage into downstream systems.
-- Reused the data architecture to reduce live deal consolidation from 48 hours to six hours, helping close a $25M Series B one week ahead of competitors.
+- Classify document types, material fields, confidence thresholds, and control requirements before automation.
+- Preserve source images, extracted values, model/version lineage, reviewer decisions, and downstream changes.
+- Route low-confidence or high-risk fields to authorized reviewers and prevent silent overwrites.
+- Release by document class after parallel comparison against the existing process.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use field accuracy by risk class, exception rate, reviewer agreement, audit completeness, turnaround time, and downstream corrections. These are proposed measures, not historical results.
 
-Thousands of documents were retyped manually into inconsistent tools. Basic OCR failed on nested financial tables, and fragmented taxonomies delayed investment decisions and competitive deal processes.
+## External source map
 
-### Task
-
-Create a scalable data product that automated trusted work, preserved accountability for exceptions, and supported both routine operations and time-sensitive transactions.
-
-### Actions
-
-- Designed semantic table and entity extraction rather than character-only OCR.
-- Set a 98% auto-pass threshold and sent lower-confidence fields to human validation.
-- Captured source lineage, review logs, and corrections as first-class platform data.
-- Separated reusable ingestion, scoring, and audit capabilities from deal-specific taxonomies and risk thresholds.
-
-### Results
-
-- Document processing fell from hours to seconds.
-- Processing cost declined approximately 70%.
-- Deal-data consolidation fell from 48 hours to six hours.
-- The workflow saved roughly 15 person-weeks annually and helped close a $25M financing ahead of competitors.
-
-## Decisions and trade-offs
-
-- Automate high-confidence work rather than pursue unsafe full automation.
-- Make operations staff model teachers and validators, not passive recipients of automation.
-- Build one reusable platform while allowing risk-specific schemas and thresholds.
-
-## Leadership signal
-
-Aligned investors, quants, operations, legal, and compliance around a transparent human-plus-machine operating model and a shared data architecture.
-
-## Skills and keywords
-
-intelligent document processing · semantic extraction · confidence scoring · human review · data lineage · MLOps · workflow automation · platform strategy · financial data · responsible AI
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2faf9e255f2180adb105de4da72e0696)
-
+| Source | Contribution |
+|---|---|
+| [NIST - SP 800-53 Revision 4 (2015)](https://csrc.nist.gov/pubs/sp/800/53/r4/upd1/final) | Primary security, privacy, audit, integrity, and contingency-control foundation. |
+| [COSO - Internal Control Integrated Framework (2013)](https://www.coso.org/guidance-on-ic/pages/default.aspx) | Primary framework for reliable information, control activities, and monitoring. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Work dates only. |

@@ -1,56 +1,28 @@
-# Merchant AI Platform — Governed Knowledge Graph at Scale
+# Merchant AI Platform - Governed Knowledge Graph at Scale
 
-> **Portfolio lens:** AI/data platform strategy, proprietary context, knowledge graphs, embedded workflows, and product adoption.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public AI Product Management resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) is used only to place this case within the Rakuten role dated June-December 2023.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Built a shared AI and data platform across more than 70 businesses and 50,000 merchants. The strategy partnered for foundation-model intelligence while investing internally in a governed knowledge graph, hybrid retrieval, privacy controls, and task-specific merchant experiences.
+W3C's RDF 1.1 Concepts defines a graph-based data model for making statements about resources. NIST's AI RMF requires documented context, governance, measurement, and risk treatment. Those sources support a merchant knowledge layer with explicit identity, provenance, ownership, access, and quality rules before it is used by AI applications.
 
-## Resume-ready impact
+## Case approach
 
-- Led a horizontal GenAI platform across 70+ businesses and 50,000+ merchants, reaching 40% adoption in six months and 78% weekly retention.
-- Built the differentiated context layer—a governed knowledge graph connecting merchant, product, transaction, and operating data—while partnering for the foundation model.
-- Embedded AI into listing, review, and image workflows, reducing listing time from 45 to 12 minutes and increasing merchant conversion 15%.
+- Define merchant, product, policy, offer, and relationship semantics with accountable domain owners.
+- Preserve source, timestamp, transformation, confidence, and consent metadata for material facts.
+- Separate authoritative facts from inferred relationships and expose uncertainty to consuming products.
+- Gate AI use cases on graph completeness, freshness, access controls, and correction workflows.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use entity resolution quality, provenance coverage, freshness, policy violations, correction time, and downstream task quality. These are proposed measures, not historical results.
 
-Data and AI tools were fragmented by business unit, duplicated engineering effort, and lacked shared context. A generic chatbot saw weak adoption because merchants had to explain work the system should already understand.
+## External source map
 
-### Task
-
-Create a reusable AI platform that preserved business-level permissions while making proprietary context useful inside high-frequency workflows.
-
-### Actions
-
-- Separated commodity reasoning capability from the proprietary knowledge, retrieval, policy, and workflow layers.
-- Combined semantic and exact retrieval with a common entity-and-relationship model and permission-aware access.
-- Replaced chat-first interactions with task buttons embedded in the listing workflow.
-- Used privacy redaction, authorized grounding, local policy, and merchant approval as a three-layer safety model.
-
-### Results
-
-- Merchant adoption reached 40% in six months and weekly retention reached 78%.
-- Listing time fell from 45 minutes to 12 minutes.
-- Generated copy increased merchant conversion 15%.
-- The shared context layer also supported a 25% reduction in mobile-network energy use.
-
-## Decisions and trade-offs
-
-- Buy foundation-model capability; build proprietary context and workflow differentiation.
-- Stop the generic chatbot after usage evidence showed it did not remove a meaningful job.
-- Do not launch cross-service selling until privacy and compliance controls were sufficient.
-
-## Leadership signal
-
-Aligned more than 70 businesses around one governed platform without forcing identical interfaces or broad data access, balancing central standards with local product ownership.
-
-## Skills and keywords
-
-GenAI platform · knowledge graph · hybrid retrieval · RAG · data governance · workflow AI · human approval · platform strategy · merchant adoption · build versus partner
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2fcf9e255f21805e91b6e8182706b2da)
-
+| Source | Contribution |
+|---|---|
+| [W3C - RDF 1.1 Concepts and Abstract Syntax (2014)](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | Primary technical model for graph statements, resources, and data interchange. |
+| [NIST - AI Risk Management Framework 1.0 (2023)](https://doi.org/10.6028/NIST.AI.100-1) | Primary governance and lifecycle-risk framework. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf) | Work dates only. |
