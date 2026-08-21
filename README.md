@@ -16,6 +16,12 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 - MLOps, evaluation, and responsible AI
 - Data platforms, developer experience, and product-led growth
 
+## Selected work samples
+
+- [Canonical product manager written interview](./work-samples/canonical-product-manager-written-interview.docx) - product judgment, open-source ecosystems, and cloud infrastructure
+- [Omni One gamified player progression proposal](./work-samples/virtuix-omni-one-gamified-player-progression-system-proposal.pdf) - engagement and progression-system design
+- [Omni One VR boundary and mode-switching PRD](./work-samples/virtuix-omni-one-pico-vr-boundary-and-mode-switching-prd-2024.pdf) - product requirements and cross-device experience design
+
 ## Profile
 
 [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
