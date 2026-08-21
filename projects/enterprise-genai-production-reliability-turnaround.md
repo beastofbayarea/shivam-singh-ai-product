@@ -12,7 +12,7 @@ My diagnosis was that the roadmap’s unit of value was wrong. A model endpoint,
 
 I paused lower-priority expansion and rewrote the roadmap around four constraints: production reliability, integration, workflow readiness, and accountable operation.
 
-I owned an enterprise product reset across infrastructure, workflow design, customer commitments, cost, risk, support, and executive priority. With 90% of deployments still confined to test and live workloads brownout-prone, I made production promotion—not demo count—the unit of strategy, redirected capacity toward the failing core, and withheld attractive expansion work until customers could operate the platform every day.
+I reset the enterprise product across infrastructure, workflow design, customer commitments, cost, risk, support, and executive priority. With 90% of deployments still confined to test and live workloads brownout-prone, I made production promotion—not demo count—the unit of strategy, redirected capacity toward the failing core, and withheld attractive expansion work until customers could operate the platform every day.
 
 ## A maturity model replaced the word “production”
 

@@ -14,7 +14,7 @@ The analysis compared treatment and control changes, then challenged the estimat
 
 I built a Python log-log regression layer above the legacy ERP because the coefficient had a meaning merchants could interrogate: the expected percentage change in unit demand for a percentage change in price, conditional on the model and test population.
 
-I owned the end-to-end decision factory behind the model: experimental evidence, product-role taxonomy, recommendation design, merchant authority, 500-item customer guardrails, cross-channel publication, a permanent learning sample, and the executive bridge to a $50 million opportunity. The product succeeded only if it could move from test to reconciled store and digital execution in under a week without turning forecast confidence into unilateral pricing authority.
+I built the end-to-end decision factory behind the model: experimental evidence, product-role taxonomy, recommendation design, merchant authority, 500-item customer guardrails, cross-channel publication, a permanent learning sample, and the executive bridge to a $50 million opportunity. The product succeeded only if it could move from test to reconciled store and digital execution in under a week without turning forecast confidence into unilateral pricing authority.
 
 I then made the recommendation portfolio-aware:
 
