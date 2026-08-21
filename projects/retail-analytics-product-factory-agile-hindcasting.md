@@ -1,61 +1,57 @@
-# Retail Analytics Product Factory - Agile Pods and Hindcasting
-
-## What I worked on
+# Retail Analytics Product Factory — Agile Pods and Hindcasting
 
 I completed this work during my [McKinsey experience from 2014 to 2016](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
 
-I converted a national retailer's slow analytics workflow into a product-style delivery system. I introduced Agile Pod delivery and hindcasting-based validation, reducing analytics speed-to-market from six weeks to less than one week while improving stakeholder adoption through transparent model review.
+## The bottleneck was the delivery system
 
-## At a glance
+A national retailer’s analytics cycle took six weeks, and business stakeholders had little confidence in outputs they could not inspect. Improving a model inside the same handoff-heavy process would not have solved either problem.
 
-- I introduced an Agile Pod operating model for retail analytics delivery.
-- I used hindcasting to test model behavior against historical periods before release.
-- I reduced analytics speed-to-market from six weeks to less than one week and improved stakeholder adoption through transparent review.
+I converted the work into a product delivery system: a prioritized backlog, a cross-functional pod, working increments, historical validation, and a review process that made assumptions and limits visible.
 
-## The situation
+## Building the pod around a decision
 
-Retail analytics had meaningful upside but required more than a model: McKinsey's 2011 research identified retail as a major big-data value pool and emphasized that workflows, incentives, talent, and access to multiple data sources were necessary to capture it. The project itself was constrained by a six-week delivery cycle and low confidence in opaque analytical outputs.
+I organized Product, Analytics, and business ownership around a smaller number of decision-ready use cases. Every backlog item needed a named user, a business decision, required data, an acceptance condition, and an adoption path.
 
-## What I needed to accomplish
+That discipline reduced a broad queue of unfinished analysis. The Agile Manifesto informed the use of working increments, customer collaboration, and responsiveness to new evidence, but I adapted those principles to analytics rather than copying a software ceremony.
 
-I needed to create a repeatable product-delivery model that shortened the path from business question to usable analytical decision while preserving credible historical validation and stakeholder review.
+## Replacing the final handoff
 
-## What I did
+The previous process concentrated review at the end. I replaced it with short loops in which business owners saw the evolving logic, analysts exposed assumptions, and implementation teams identified workflow constraints before release.
 
-- I organized a cross-functional Agile Pod around a prioritized analytics backlog, consistent with the Agile principles of customer collaboration, working increments, and responsiveness to change.
-- I replaced a single end-stage handoff with short delivery loops connecting business owners, analysts, and implementation stakeholders.
-- I applied hindcasting and rolling historical tests before release; out-of-sample forecast research available before the engagement supports rolling origins and multiple test periods as stronger validation practice.
-- I made model assumptions, historical fit, exceptions, and decision limits visible in review sessions so adoption depended on explainable evidence rather than a black-box score.
+This changed stakeholder review from approval theater into product discovery. A model could be technically promising and still fail if the output arrived too late, hid an important exception, or did not fit the operating decision.
 
-## The results
+## Hindcasting as a release gate
 
-- Analytics speed-to-market fell from six weeks to less than one week.
-- Historical validation became part of the product-release process.
-- Transparent model review improved stakeholder adoption.
+I used rolling historical periods to test how a model behaved on data it had not used to fit. Tashman’s research on rolling origins and multiple out-of-sample periods informed the validation design.
 
-## Decisions and trade-offs
+A single attractive backtest was not enough. The pod reviewed performance by period, segment, exception type, and decision consequence. I exposed assumptions, historical fit, error, and known limits in the same session as the recommendation.
 
-- I optimized for a smaller number of decision-ready use cases instead of a broad queue of unfinished analyses.
-- I treated historical validation as a release gate, accepting some iteration cost to reduce downstream decision risk.
-- I favored explainable assumptions and reviewability when incremental model complexity would weaken adoption.
+I accepted some iteration cost to preserve that release gate. Shipping an opaque model faster would have reduced the cycle time while worsening adoption and downstream decision risk.
 
-## How I led
+## What changed
 
-Joined product management, analytics, and business ownership into one delivery loop and made model credibility a shared operating responsibility.
+| Outcome | Result |
+|---|---:|
+| Analytics speed to market | Six weeks to under one |
+| Historical validation | Embedded in the release process |
+| Stakeholder adoption | Improved through transparent review |
+| Operating model | Cross-functional pod with a prioritized product backlog |
 
-## Why I chose this approach
+The cycle-time improvement came from removing handoffs and narrowing work to decision-ready increments—not from asking analysts to work six times faster.
 
-I used [Manifesto for Agile Software Development (2001)](https://agilemanifesto.org/) to ground iterative product-delivery principles. I used [Tashman - Out-of-sample tests of forecasting accuracy (2000)](https://www.sciencedirect.com/science/article/pii/S0169207000000650) to ground hindcasting and rolling-origin validation methodology. I used [McKinsey Global Institute - Big data (2011)](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) to ground retail analytics market and operating-model context.
+## The leadership move
+
+I made model credibility a shared responsibility. Product owned the user and decision, Analytics owned the method and evidence, and business leaders owned how the result entered the operating workflow.
+
+That ownership model gave the team a way to move quickly without treating explainability and validation as optional documentation.
 
 ## Sources and external context
 
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
+These sources informed the product-delivery and validation design. The resume link establishes the work period.
 
 | Source | How it informed my work | Timing |
 |---|---|---|
-| [McKinsey Global Institute - Big data: The next frontier for innovation, competition, and productivity](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) | I used it for retail big-data value potential and the need to redesign workflows, incentives, talent, and data access. | May 2011 |
-| [Manifesto for Agile Software Development](https://agilemanifesto.org/) | I used it for iterative delivery, customer collaboration, working increments, and adapting to change. | 2001 |
-| [Tashman - Out-of-sample tests of forecasting accuracy](https://doi.org/10.1016/S0169-2070(00)00065-0) | I used it for rolling-origin, multiple-period, out-of-sample forecast validation. | October 2000 |
-| [Manifesto for Agile Software Development (2001)](https://agilemanifesto.org/) | I used it to ground iterative product-delivery principles. | — |
-| [Tashman - Out-of-sample tests of forecasting accuracy (2000)](https://www.sciencedirect.com/science/article/pii/S0169207000000650) | I used it to ground hindcasting and rolling-origin validation methodology. | — |
-| [McKinsey Global Institute - Big data (2011)](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) | I used it to ground retail analytics market and operating-model context. | — |
+| [Manifesto for Agile Software Development](https://agilemanifesto.org/) | I used its principles to create working increments, close customer collaboration, and responsiveness to evidence. | 2001 |
+| [Tashman — Out-of-sample tests of forecasting accuracy](https://doi.org/10.1016/S0169-2070(00)00065-0) | I used rolling origins and multiple historical test periods as a stronger release gate than in-sample fit. | 2000 |
+| [McKinsey Global Institute — Big data: The next frontier for innovation, competition, and productivity](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/big-data-the-next-frontier-for-innovation) | I used it for contemporaneous retail value-pool and operating-model context. | 2011 |
+

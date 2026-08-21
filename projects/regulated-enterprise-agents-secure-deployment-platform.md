@@ -1,58 +1,63 @@
 # Regulated Enterprise Agents — Secure Deployment Platform
 
-## What I worked on
-
 I completed this work during my [AWS experience from July 2024 to present](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
 
-I built a secure golden path for stateful, tool-using enterprise agents. The platform standardized private networking, zero retention, customer-owned payload logs, persistent state, permissioned tools, explicit agent identities, and human checkpoints while keeping setup practical.
+## The trap I needed to escape
 
-## At a glance
+Regulated enterprises were choosing between two bad options: uncontrolled employee use of public AI or approved internal tools that were too difficult to use. The internal path required three services, agents lost state, voice latency approached three seconds, and private systems had no consistent connection model.
 
-- I led a secure agent-platform strategy that onboarded more than 5,000 regulated tenants and supported $20M in contracts with zero recorded data-exfiltration events.
-- I directed a 15+ engineer squad to standardize permissioned remote-tool connections, reducing private-system integration from weeks to minutes.
-- I reduced unauthorized public-AI usage roughly 70% by making the approved platform both safer and easier to adopt.
+I defined the product goal as a secure golden path. The approved route had to be both safer and easier than the shadow alternative.
 
-## The situation
+## The trust boundaries
 
-Regulated enterprises were caught between uncontrolled employee use of public AI and internal tools that were too complex. Agents lost state, voice latency approached three seconds, and private systems lacked a safe standard connection.
+I separated customer content from provider operations. Prompts, responses, and tool payloads stayed inside the customer-controlled environment with zero retention at the provider layer. The platform retained only the operational metadata required to run and support the service.
 
-## What I needed to accomplish
+Every agent became a governed digital identity. Its permissions specified which data it could retrieve, which tools it could call, which actions it could take, how much it could spend, and where human approval was mandatory.
 
-I needed to create a production-ready platform that preserved privacy, identity, observability, performance, and usability without centralizing sensitive customer payloads.
+NIST Zero Trust Architecture informed that identity-first, least-privilege model. NIST’s Generative AI Profile extended the risk model to AI behavior, evaluation, monitoring, and human oversight.
 
-## What I did
+## Standardizing private tool use
 
-- I separated customer-owned prompt, response, and tool traces from provider-owned operational metadata.
-- I designed every agent as a governed digital identity with explicit data, action, and budget boundaries.
-- I delayed code execution for 30 days until sandbox isolation was proven.
-- I introduced a single launchpad template after customer feedback showed the initial three-service setup was too complex.
+I directed a team of more than 15 engineers to create permissioned remote-tool connections for private enterprise systems. The standard reduced integration from weeks to minutes because customers no longer had to design identity, network, authorization, and audit behavior from scratch for every agent.
 
-## The results
+I also added persistent state, private networking, customer-owned payload logs, explicit agent identities, and observable policy decisions to the golden path.
 
-- More than 5,000 regulated tenants onboarded.
-- The platform supported $20M in contracts and recorded zero exfiltration events.
-- Shadow-AI usage declined approximately 70%.
-- I selected workflows reduced bank contract-audit time from weeks to days, increased output 60%, and saved clinicians about two hours per day.
+## The code-execution decision
 
-## Decisions and trade-offs
+I delayed code execution for 30 days after the sandbox failed its isolation proof. The team continued reversible work on permissions, templates, and monitoring while the irreversible risk remained blocked.
 
-- I made the safest deployment path the default and simplest journey.
-- I delayed an irreversible code-execution risk while preserving reversible product progress.
-- I retained sensitive payloads inside the customer perimeter and debug with metadata plus sanitized reproductions.
+That decision protected product momentum without converting schedule pressure into an enterprise security exception.
 
-## How I led
+## Simplifying the journey
 
-Balanced product velocity, security, enterprise usability, and customer trust across engineers, risk teams, administrators, and regulated buyers.
+The first design exposed three services and required customers to assemble them correctly. Customer feedback showed that the architecture was secure but not adoptable. I replaced it with one launchpad template that created the approved network, identity, logging, state, and tool configuration together.
 
-## Why I chose this approach
+This usability change was part of the security strategy. A difficult secure path sends people back to uncontrolled tools.
 
-I used [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) to ground generative AI risk, governance, and evaluation foundation. I used [NIST - Zero Trust Architecture (2020)](https://doi.org/10.6028/NIST.SP.800-207) to ground least-privilege identity and access architecture.
+## What changed
+
+| Outcome | Result |
+|---|---:|
+| Regulated tenants onboarded | More than 5,000 |
+| Contracts supported | $20M |
+| Recorded data-exfiltration events | Zero |
+| Unauthorized public-AI usage | Approximately -70% |
+| Private-system integration | Weeks to minutes |
+| Selected bank audit workflow | Weeks to days |
+| Selected clinical workflows | Approximately two hours saved per clinician per day |
+
+I treat the workflow outcomes as examples of what the platform enabled, not as one universal productivity claim.
+
+## What I learned
+
+Security controls became product capabilities when buyers could understand, configure, and observe them. The strongest adoption lever was not a lower-friction exception process; it was making the compliant default path genuinely usable.
 
 ## Sources and external context
 
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
+These sources informed the identity, deployment, and AI-risk model. The resume link establishes the employment timeline.
 
 | Source | How it informed my work | Timing |
 |---|---|---|
-| [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) | I used it to ground generative AI risk, governance, and evaluation foundation. | — |
-| [NIST - Zero Trust Architecture (2020)](https://doi.org/10.6028/NIST.SP.800-207) | I used it to ground least-privilege identity and access architecture. | — |
+| [NIST — Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207) | I used it to define explicit identity, least privilege, resource-level policy, and continuous evaluation. | 2020 |
+| [NIST — Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1) | I used it to include model risk, evaluation, monitoring, incident response, and human oversight in the deployment model. | 2024 |
+

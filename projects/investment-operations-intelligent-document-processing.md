@@ -1,58 +1,68 @@
 # Investment Operations — Intelligent Document Processing
 
-## What I worked on
-
 I completed this work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
 
-I built an intelligent document-processing platform that turned complex financial documents into structured, auditable data. The product automated only high-confidence fields, routed uncertainty to humans, and converted every correction into training data.
+## The workflow I replaced
 
-## At a glance
+Thousands of financial documents were manually retyped into inconsistent tools. Basic OCR operated near 80% accuracy and broke on nested tables, footnotes, and context-dependent fields. The cost was not only data entry: fragmented taxonomies slowed investment decisions and made it difficult to trace a value back to the source document.
 
-- I led an intelligent document-processing platform across 15 global teams, reducing financial-document ingestion from hours to seconds and processing cost roughly 70%.
-- I replaced basic OCR near 80% accuracy with semantic extraction and a 98% confidence threshold for automated passage into downstream systems.
-- Reused the data architecture to reduce live deal consolidation from 48 hours to six hours, helping close a $25M Series B one week ahead of competitors.
+I defined the product as structured, auditable data—not extracted text.
 
-## The situation
+## The automation boundary
 
-Thousands of documents were retyped manually into inconsistent tools. Basic OCR failed on nested financial tables, and fragmented taxonomies delayed investment decisions and competitive deal processes.
+I set a 98% confidence threshold for automated passage into downstream systems. Lower-confidence fields and higher-risk values went to authorized reviewers. That decision deliberately limited straight-through automation, but it prevented silent errors from entering investment and reporting workflows.
 
-## What I needed to accomplish
+Operations staff were not a fallback queue. I made their review decisions part of the product: every correction captured the source, extracted value, confidence, reviewer action, reason, and resulting model feedback.
 
-I needed to create a scalable data product that automated trusted work, preserved accountability for exceptions, and supported both routine operations and time-sensitive transactions.
+## Moving beyond character recognition
 
-## What I did
+I designed semantic table and entity extraction that used layout and document context rather than relying on character recognition alone. LayoutLM research, published at the end of the work period, later formalized the same technical direction by jointly modeling text and layout for document understanding.
 
-- I designed semantic table and entity extraction rather than character-only OCR.
-- I set a 98% auto-pass threshold and sent lower-confidence fields to human validation.
-- I captured source lineage, review logs, and corrections as first-class platform data.
-- I separated reusable ingestion, scoring, and audit capabilities from deal-specific taxonomies and risk thresholds.
+I separated reusable capabilities from deal-specific logic:
 
-## The results
+- ingestion and document classification;
+- semantic extraction and confidence scoring;
+- source lineage and review records;
+- correction and feedback capture;
+- audit and downstream publishing;
+- deal-specific taxonomies, thresholds, and exception rules.
 
-- Document processing fell from hours to seconds.
-- Processing cost declined approximately 70%.
-- Deal-data consolidation fell from 48 hours to six hours.
-- The workflow saved roughly 15 person-weeks annually and helped close a $25M financing ahead of competitors.
+That separation allowed 15 global teams to use one platform without pretending that every document or decision carried the same risk.
 
-## Decisions and trade-offs
+## Provenance as a product feature
 
-- I automated high-confidence work rather than pursue unsafe full automation.
-- I made operations staff model teachers and validators, not passive recipients of automation.
-- I built one reusable platform while allowing risk-specific schemas and thresholds.
+I treated source lineage as first-class data. W3C PROV provided a useful model for representing the entities, activities, and agents behind a derived value. In practice, that meant a user could see where a field came from, how it changed, who reviewed it, and which version entered a downstream decision.
 
-## How I led
+NIST SP 800-53 and COSO informed the control model around access, integrity, audit, contingency, reliable information, and monitoring.
 
-I aligned investors, quants, operations, legal, and compliance around a transparent human-plus-machine operating model and a shared data architecture.
+## Reuse under deal pressure
 
-## Why I chose this approach
+The platform architecture became valuable beyond routine ingestion. I reused it to consolidate live deal data, reducing turnaround from 48 hours to six. The faster, traceable view helped close a $25M Series B one week ahead of competitors.
 
-I used [NIST - SP 800-53 Revision 4 (2015)](https://csrc.nist.gov/pubs/sp/800/53/r4/upd1/final) to ground security, privacy, audit, integrity, and contingency-control foundation. I used [COSO - Internal Control Integrated Framework (2013)](https://www.coso.org/guidance-on-ic/pages/default.aspx) to ground framework for reliable information, control activities, and monitoring.
+I did not create a separate emergency pipeline. Reuse was possible because the core platform separated stable ingestion and audit capabilities from the schema and thresholds of a particular deal.
+
+## What changed
+
+| Outcome | Result |
+|---|---:|
+| Document ingestion | Hours to seconds |
+| Processing cost | Approximately -70% |
+| Live deal consolidation | 48 hours to six |
+| Annual operating effort | Approximately 15 person-weeks saved |
+| Transaction supported | $25M Series B closed one week ahead of competitors |
+
+## What I protected
+
+I automated only the work the system could perform with sufficient confidence. I kept human accountability for uncertainty, preserved a trace from source to decision, and avoided one global taxonomy that would have hidden meaningful differences in document and deal risk.
 
 ## Sources and external context
 
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
+These sources informed the document, provenance, and control architecture. The resume link establishes the work period.
 
 | Source | How it informed my work | Timing |
 |---|---|---|
-| [NIST - SP 800-53 Revision 4 (2015)](https://csrc.nist.gov/pubs/sp/800/53/r4/upd1/final) | I used it to ground security, privacy, audit, integrity, and contingency-control foundation. | — |
-| [COSO - Internal Control Integrated Framework (2013)](https://www.coso.org/guidance-on-ic/pages/default.aspx) | I used it to ground framework for reliable information, control activities, and monitoring. | — |
+| [Xu et al. — LayoutLM](https://arxiv.org/abs/1912.13318) | I used it as contemporaneous evidence for combining text and layout in document understanding rather than relying on OCR alone. | December 2019 |
+| [W3C — PROV-O](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | I used it to structure provenance across source entities, transformation activity, and accountable agents. | 2013 |
+| [NIST — SP 800-53 Revision 4](https://csrc.nist.gov/pubs/sp/800/53/r4/upd1/final) | I used it to define security, integrity, audit, access, and contingency controls. | 2015 |
+| [COSO — Internal Control Integrated Framework](https://www.coso.org/guidance-on-ic/pages/default.aspx) | I used it to connect reliable information, control activities, ownership, and monitoring. | 2013 |
+

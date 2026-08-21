@@ -1,58 +1,63 @@
 # Merchant AI Platform — Governed Knowledge Graph at Scale
 
-## What I worked on
-
 I completed this work during my [Rakuten experience from June to December 2023](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
 
-I built a shared AI and data platform across more than 70 businesses and 50,000 merchants. The strategy partnered for foundation-model intelligence while investing internally in a governed knowledge graph, hybrid retrieval, privacy controls, and task-specific merchant experiences.
+## Why the chatbot failed
 
-## At a glance
+More than 70 businesses had fragmented data and duplicated AI work. The first common experience was a generic chatbot, but merchants had to explain the listing, product, campaign, or review context before the system could help. Usage evidence showed that the interface did not remove a meaningful job.
 
-- I led a horizontal GenAI platform across 70+ businesses and 50,000+ merchants, reaching 40% adoption in six months and 78% weekly retention.
-- I built the differentiated context layer—a governed knowledge graph connecting merchant, product, transaction, and operating data—while partnering for the foundation model.
-- I embedded AI into listing, review, and image workflows, reducing listing time from 45 to 12 minutes and increasing merchant conversion 15%.
+I stopped the chatbot and changed the product thesis: the platform needed to know the merchant’s authorized context and appear inside the workflow where that context mattered.
 
-## The situation
+## The build-versus-buy choice
 
-Data and AI tools were fragmented by business unit, duplicated engineering effort, and lacked shared context. A generic chatbot saw weak adoption because merchants had to explain work the system should already understand.
+I partnered for foundation-model intelligence and invested internally in the differentiated layers:
 
-## What I needed to accomplish
+- a governed merchant, product, transaction, and operating knowledge graph;
+- hybrid semantic and exact retrieval;
+- permission-aware context assembly;
+- business-specific policy;
+- task-level workflow integrations;
+- merchant review and correction.
 
-I needed to create a reusable AI platform that preserved business-level permissions while making proprietary context useful inside high-frequency workflows.
+Buying the model avoided recreating commodity reasoning capability. Building the context and workflow layer protected the knowledge, permissions, and operating behavior that distinguished the product.
 
-## What I did
+## Designing the shared context
 
-- I separated commodity reasoning capability from the proprietary knowledge, retrieval, policy, and workflow layers.
-- I combined semantic and exact retrieval with a common entity-and-relationship model and permission-aware access.
-- I replaced chat-first interactions with task buttons embedded in the listing workflow.
-- I used privacy redaction, authorized grounding, local policy, and merchant approval as a three-layer safety model.
+I used a common entity-and-relationship model to connect merchant, product, transaction, and operational data. W3C RDF informed the graph representation, while W3C PROV influenced how the platform recorded source and derivation.
 
-## The results
+The graph did not grant broad access by default. Every retrieval respected the merchant, business, user, and purpose boundary. Privacy redaction, authorized grounding, local policy, and merchant approval formed a three-layer safety model.
 
-- Merchant adoption reached 40% in six months and weekly retention reached 78%.
-- Listing time fell from 45 minutes to 12 minutes.
-- I generated copy increased merchant conversion 15%.
-- The shared context layer also supported a 25% reduction in mobile-network energy use.
+I delayed cross-service selling until those controls were strong enough. The commercial upside did not justify creating an inference path across businesses before the platform could explain and enforce permission.
 
-## Decisions and trade-offs
+## Replacing chat with jobs
 
-- I bought foundation-model capability and built proprietary context and workflow differentiation.
-- I stopped the generic chatbot after usage evidence showed it did not remove a meaningful job.
-- I did not launch cross-service selling until privacy and compliance controls were sufficient.
+I embedded task buttons into listing, review, and image workflows. A merchant could improve a listing, draft a response, or prepare an image without reconstructing the context in a prompt.
 
-## How I led
+That design reduced listing time from 45 minutes to 12. AI-generated copy increased merchant conversion 15%. The result confirmed that workflow placement mattered as much as model quality.
 
-I aligned more than 70 businesses around one governed platform without forcing identical interfaces or broad data access, balancing central standards with local product ownership.
+## Adoption and retention
 
-## Why I chose this approach
+| Outcome | Result |
+|---|---:|
+| Merchant population | More than 50,000 |
+| Adoption | 40% in six months |
+| Weekly retention | 78% |
+| Listing time | 45 minutes to 12 |
+| Merchant conversion | +15% |
 
-I used [W3C - RDF 1.1 Concepts and Abstract Syntax (2014)](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) to ground technical model for graph statements, resources, and data interchange. I used [NIST - AI Risk Management Framework 1.0 (2023)](https://doi.org/10.6028/NIST.AI.100-1) to ground governance and lifecycle-risk framework.
+The shared context layer also supported a 25% reduction in mobile-network energy use. I treat that as evidence of platform reuse, not as a direct result of the listing experience.
+
+## How I governed a horizontal platform
+
+I aligned more than 70 businesses around shared identity, context, retrieval, and safety standards without forcing identical interfaces. Local product teams retained responsibility for their user journeys and policy detail. The platform team owned the reusable context and control contract.
 
 ## Sources and external context
 
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
+These sources informed the graph, provenance, and governance design. The resume link establishes the employment timeline.
 
 | Source | How it informed my work | Timing |
 |---|---|---|
-| [W3C - RDF 1.1 Concepts and Abstract Syntax (2014)](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | I used it to ground technical model for graph statements, resources, and data interchange. | — |
-| [NIST - AI Risk Management Framework 1.0 (2023)](https://doi.org/10.6028/NIST.AI.100-1) | I used it to ground governance and lifecycle-risk framework. | — |
+| [W3C — RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) | I used it to structure graph statements, resources, identifiers, and interchange. | 2014 |
+| [W3C — PROV-O](https://www.w3.org/TR/2013/REC-prov-o-20130430/) | I used it to represent the source and derivation of context returned to an AI workflow. | 2013 |
+| [NIST — AI Risk Management Framework 1.0](https://doi.org/10.6028/NIST.AI.100-1) | I used it to connect permissions, evaluation, monitoring, and accountability across the AI lifecycle. | 2023 |
+
