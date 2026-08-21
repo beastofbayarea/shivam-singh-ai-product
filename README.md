@@ -4,11 +4,7 @@
 
 Hi, I’m Shivam. I like product problems where the technology is powerful, the operating environment is messy, and the right answer is not simply “add AI.” My work sits across customer discovery, product strategy, data platforms, evaluation, responsible deployment, and the everyday details that determine whether a product becomes useful in production.
 
-You can reach me at [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu) or continue the conversation on [LinkedIn](https://www.linkedin.com/in/beastofbayarea).
-
-## The short version
-
-My [PDF resume](./shivam-singh-ai-product.pdf) is the best place to start. I also keep an [editable, ATS-friendly DOCX](./shivam-singh-ai-product-ats-autofill.docx) for application workflows.
+You can reach me at [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/beastofbayarea).
 
 ## How I make product decisions
 
@@ -16,15 +12,9 @@ I start with the user’s decision or job, not the model. Then I ask what data t
 
 That leads me naturally into questions about retrieval, evaluation, permissions, observability, developer experience, and unit economics. I’m interested in all of them because they shape the same thing: whether a customer can rely on the product.
 
-## Work you can open
-
-- In my [Canonical product manager written response](./work-samples/canonical-product-manager-written-interview.docx), I discuss product judgment, open-source ecosystems, and cloud infrastructure.
-- My [Omni One gamified player progression proposal](./work-samples/virtuix-omni-one-gamified-player-progression-system-proposal.pdf) explores engagement without losing sight of a coherent player experience.
-- My [Omni One VR boundary and mode-switching PRD](./work-samples/virtuix-omni-one-pico-vr-boundary-and-mode-switching-prd-2024.pdf) turns a cross-device experience into concrete requirements and operating decisions.
-
 ## Projects, from newest to oldest
 
-The files below go beyond a one-line summary. I write through how I would frame each problem, make trade-offs, organize delivery, and measure value. Independent external sources inside each project provide the factual and methodological foundation.
+The files below go beyond a one-line summary. I explain how I framed each problem, made trade-offs, organized delivery, and measured value. Independent external sources inside each project provide the market and methodological foundation.
 
 ### Amazon Web Services (AWS)
 
@@ -32,11 +22,11 @@ The files below go beyond a one-line summary. I write through how I would frame 
 
 #### [Enterprise GenAI: production-reliability turnaround](./projects/enterprise-genai-production-reliability-turnaround.md)
 
-The interesting question here is not how to produce a better demo; it is how to make a generative-AI system dependable in production. I work through evaluation, observability, failure analysis, release gates, and the sequence I would use to rebuild customer confidence.
+I reset an enterprise GenAI roadmap after feature work diverged from production adoption. A maturity model, LLM-specific scaling signals, workflow-readiness gates, and reliability-first prioritization turned the platform from fragile demos into real-time enterprise infrastructure.
 
 #### [Regulated enterprise agents: secure deployment platform](./projects/regulated-enterprise-agents-secure-deployment-platform.md)
 
-What should an agent be allowed to know, decide, and do? I answer that through identity, permissions, data boundaries, human approvals, auditability, and a staged adoption model for regulated enterprises.
+I built a secure golden path for stateful, tool-using enterprise agents. The platform standardized private networking, zero retention, customer-owned payload logs, persistent state, permissioned tools, explicit agent identities, and human checkpoints while keeping setup practical.
 
 ### Rakuten Group, Inc.
 
@@ -44,7 +34,7 @@ What should an agent be allowed to know, decide, and do? I answer that through i
 
 #### [Merchant AI: governed knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md)
 
-Merchant recommendations are only as trustworthy as the facts beneath them. I explore how a governed knowledge graph could reconcile fragmented information, explain recommendations, control actions, and learn from feedback.
+I built a shared AI and data platform across more than 70 businesses and 50,000 merchants. The strategy partnered for foundation-model intelligence while investing internally in a governed knowledge graph, hybrid retrieval, privacy controls, and task-specific merchant experiences.
 
 ### Microsoft Corporation
 
@@ -52,7 +42,7 @@ Merchant recommendations are only as trustworthy as the facts beneath them. I ex
 
 #### [Wealth management: explainable next-best actions](./projects/wealth-management-explainable-next-best-actions.md)
 
-An advisor should not have to choose between useful intelligence and an explanation they can defend. This project shows how I would bring recommendations into the workflow while preserving suitability, oversight, and client trust.
+I redesigned an accurate but unused churn model into a prescriptive advisor product. Each recommendation supplied a next action, plain-language reasons, source evidence, auditability, and a structured feedback path so human disagreement improved the model and operating data.
 
 ### The D. E. Shaw Group
 
@@ -60,7 +50,7 @@ An advisor should not have to choose between useful intelligence and an explanat
 
 #### [Investment operations: intelligent document processing](./projects/investment-operations-intelligent-document-processing.md)
 
-Document automation becomes valuable when it handles the routine work without hiding uncertainty. I lay out how confidence thresholds, exception queues, human review, and operational metrics can make that balance practical.
+I built an intelligent document-processing platform that turned complex financial documents into structured, auditable data. The product automated only high-confidence fields, routed uncertainty to humans, and converted every correction into training data.
 
 ### McKinsey & Company
 
@@ -68,5 +58,4 @@ Document automation becomes valuable when it handles the routine work without hi
 
 #### [Retail analytics product factory: Agile pods and hindcasting](./projects/retail-analytics-product-factory-agile-hindcasting.md)
 
-I treat analytics as a product-delivery problem, not a sequence of isolated models. The case combines cross-functional pods, historical validation, transparent model review, and a release rhythm that business users can understand.
-
+I converted a national retailer's slow analytics workflow into a product-style delivery system. I introduced Agile Pod delivery and hindcasting-based validation, reducing analytics speed-to-market from six weeks to less than one week while improving stakeholder adoption through transparent model review.

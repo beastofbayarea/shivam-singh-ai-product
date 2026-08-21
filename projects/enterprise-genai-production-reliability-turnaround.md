@@ -1,105 +1,57 @@
-# Enterprise generative AI Platform - Production Reliability Turnaround
+# Enterprise GenAI Platform — Production Reliability Turnaround
 
-## How I frame the project
+## What I worked on
 
-I developed this case study to show how I would lead the work behind **Enterprise generative AI Platform - Production Reliability Turnaround** from an ambiguous starting point to an evidence-based decision and an executable plan. I place it in the context of my [AWS experience from July 2024 to present](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
+I completed this work during my [AWS experience from July 2024 to present](https://github.com/beastofbayarea/shivam-singh-ai-product/blob/main/shivam-singh-ai-product.pdf).
 
-I keep the story practical and transparent. I start with public evidence, turn that evidence into explicit choices, assign ownership, and define how I would know whether the work is creating value.
+I reset an enterprise GenAI roadmap after feature work diverged from production adoption. A maturity model, LLM-specific scaling signals, workflow-readiness gates, and reliability-first prioritization turned the platform from fragile demos into real-time enterprise infrastructure.
 
-## Why this problem matters to me
+## At a glance
 
-I see AI programs struggle when teams optimize model capability without defining the user decision, evaluation standard, safety boundary, operational owner, and path to adoption. I therefore treat the project as a user-value, model-quality, governance, and delivery challenge, not as a narrow functional exercise.
+- Redirected an enterprise GenAI roadmap after 90% of deployments remained in test and 70% of lost deals cited reliability rather than missing features.
+- I introduced queue-depth and time-per-token scaling, warm capacity, deployment standards, integration gates, and a four-level production-readiness ladder.
+- I reduced inference latency from three to five seconds to under 800 ms, lowered training cost 22%, and increased engagement 25%.
 
-I use [AWS - Well-Architected Reliability Pillar (2024)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) to ground reliability, monitoring, recovery, and testing methodology. I use [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) to ground generative AI lifecycle-risk and evaluation framework.
+## The situation
 
-## What I would set out to accomplish
+Customers saw strong demonstrations but faced slow inference, multi-minute brownouts, missing connectors, unclear controls, and workflows that were not operationally ready.
 
-- I would define service objectives for availability, latency, factuality, safety, and recovery.
-- I would instrument retrieval, generation, policy checks, dependencies, and user-visible failures separately.
-- I would use staged releases, automated rollback, playbooks, post-incident learning, and adversarial evaluation.
-- I would prioritize failure modes by user harm and business criticality rather than aggregate uptime alone.
+## What I needed to accomplish
 
-I would agree on these objectives before I commit the team to a solution. I would also record what is out of scope, which assumptions remain uncertain, and which new evidence would cause me to change direction.
+I needed to reorient product success from features shipped to reliable customer workflows running in production.
 
-## How I would structure the work
+## What I did
 
-### How I would approach workstream 1
+- I paused lower-priority feature expansion and consolidated the roadmap around reliability, integration, governance, and customer maturity.
+- I replaced CPU-only autoscaling with demand signals tied to the actual LLM experience.
+- I defined readiness across process ownership, data quality, connectors, monitoring, governance, and incident response.
+- I used account maturity signals to trigger targeted integration workshops and prioritize recurring blockers.
 
-I would define service objectives for availability, latency, factuality, safety, and recovery. I would use a staged plan with entry criteria, evidence-based go or no-go decisions, observability, rollback triggers, and named incident ownership. I would treat readiness as a demonstrated condition, not as a calendar date or a presentation milestone.
+## The results
 
-### How I would approach workstream 2
+- Inference latency fell below 800 ms.
+- Training costs declined 22%.
+- Engagement increased 25%.
+- The platform became viable for real-time enterprise workflows and gained a clearer reliability-led enterprise value proposition.
 
-I would instrument retrieval, generation, policy checks, dependencies, and user-visible failures separately. I would define the service objective, failure modes, capacity assumptions, instrumentation, and recovery path before I scale the change. I would use canaries and controlled stress to learn where the system breaks while the blast radius is still small.
+## Decisions and trade-offs
 
-### How I would approach workstream 3
+- I deferred a requested voice feature until existing text failures were stabilized.
+- I carried some idle buffer capacity to eliminate cold starts for priority workloads.
+- I treated workflow readiness as part of the product, not a customer implementation detail.
 
-I would use staged releases, automated rollback, playbooks, post-incident learning, and adversarial evaluation. I would use a staged plan with entry criteria, evidence-based go or no-go decisions, observability, rollback triggers, and named incident ownership. I would treat readiness as a demonstrated condition, not as a calendar date or a presentation milestone.
+## How I led
 
-### How I would approach workstream 4
+I connected leadership, engineering, sales, and customer success around observable production outcomes, converting reliability work from an internal concern into a commercial differentiator.
 
-I would prioritize failure modes by user harm and business criticality rather than aggregate uptime alone. I would define the service objective, failure modes, capacity assumptions, instrumentation, and recovery path before I scale the change. I would use canaries and controlled stress to learn where the system breaks while the blast radius is still small.
+## Why I chose this approach
 
-## How I would lead the people and decisions
+I used [AWS - Well-Architected Reliability Pillar (2024)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) to ground reliability, monitoring, recovery, and testing methodology. I used [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) to ground generative AI lifecycle-risk and evaluation framework.
 
-I would run the project with a small decision-making core that includes product, engineering, applied science or data science, security, legal, operations, go-to-market, and representative users. I would agree up front on who recommends, who decides, who executes, and who must be consulted so that cross-functional collaboration does not become consensus by default.
+## Sources and external context
 
-- I would maintain a weekly working session focused on evidence, decisions, dependencies, and risks rather than broad status reporting.
-- I would use a concise decision log that records the question, options, evidence, owner, decision, date, and conditions for revisiting it.
-- I would schedule executive reviews around irreversible choices, material risk changes, and commitment gates instead of arbitrary reporting cycles.
-- I would keep user, customer, partner, or operator feedback connected to the backlog so that qualitative evidence changes delivery priorities.
+I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
 
-## How I would sequence delivery
-
-### How I would establish the baseline
-
-I would begin by documenting the current workflow, economics, controls, service levels, pain points, and ownership boundaries. I would separate verified facts from assumptions and make missing evidence visible before the team debates solutions.
-
-### How I would design the smallest credible intervention
-
-I would choose the smallest change that can test the central value and risk assumptions. I would define the target cohort, acceptance criteria, instrumentation, support model, and stopping conditions before I begin the pilot.
-
-### How I would pilot and learn
-
-I would release in a bounded environment, review both expected outcomes and unintended effects, and compare results with the baseline or a meaningful counterfactual. I would use the evidence to continue, revise, narrow, or stop rather than treating launch as proof of success.
-
-### How I would scale responsibly
-
-I would expand only after the operating owner, controls, documentation, support capacity, and measurement system are ready. I would preserve rollback paths and keep reviewing cohort-level outcomes so that scale does not hide deterioration.
-
-## How I would measure progress and value
-
-I would connect every measure to a decision. I would avoid a dashboard that reports activity without telling me whether to continue, intervene, or stop.
-
-| What I would measure | How I would use it |
-|---|---|
-| I would track objective attainment | I would baseline this measure, assign an owner, review it by cohort or operating segment, and connect movement to a specific decision or corrective action. |
-| I would track factuality | I would baseline this measure, assign an owner, review it by cohort or operating segment, and connect movement to a specific decision or corrective action. |
-| I would track policy escapes | I would baseline this measure, assign an owner, review it by cohort or operating segment, and connect movement to a specific decision or corrective action. |
-| I would track dependency failure containment | I would use this to understand control effectiveness, severity, recurrence, and whether I need to stop, narrow, or redesign the rollout. |
-| I would track recovery time | I would use this to locate operational friction and decide whether process, architecture, ownership, or capacity is the limiting factor. |
-| I would track rollback quality | I would use this to judge whether the output is trustworthy enough for the next stage and to identify the failure modes that need targeted work. |
-| I would track repeat-incident rate | I would use this to understand control effectiveness, severity, recurrence, and whether I need to stop, narrow, or redesign the rollout. |
-
-I would review leading indicators during delivery and lagging outcomes after adoption. I would also pair quantitative measures with qualitative evidence so that I can explain why a number moved and what I should do next.
-
-## What I would watch closely
-
-- I would watch for weak or selectively interpreted evidence, and I would document assumptions, counter-evidence, and the confidence level behind each material decision.
-- I would watch for hidden dependencies and unclear decision rights, and I would keep a live dependency map with an owner and escalation date for every critical path item.
-- I would watch for adoption that looks healthy in aggregate but fails for important users, markets, partners, or operating teams, and I would review outcomes by cohort.
-- I would watch for model behavior that is impressive in a demonstration but unsafe, unsupported, biased, or too costly in production, and I would tie expansion to task-level evidence.
-
-I would give every material risk an owner, an early-warning indicator, a mitigation, and a trigger for escalation or rollback. I would revisit the risk register whenever the scope, evidence, or operating environment changes.
-
-## What I would consider a strong outcome
-
-I would consider the project successful when stakeholders can explain the decision, the evidence behind it, the owner of each critical dependency, and the conditions for scaling or stopping. I would also expect the operating team to inherit a usable system: clear controls, observable performance, documented exceptions, and a measurement cadence that continues after the initial launch.
-
-## Sources I rely on
-
-I use independent methodology and market evidence to shape the analysis. I use the career link above to provide chronology.
-
-| Source I use | How I use it |
-|---|---|
-| [AWS - Well-Architected Reliability Pillar (2024)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) | I use this source to ground reliability, monitoring, recovery, and testing methodology. |
-| [NIST - Generative AI Profile (2024)](https://doi.org/10.6028/NIST.AI.600-1) | I use this source to ground generative AI lifecycle-risk and evaluation framework. |
+| Source | How it informed my work | Timing |
+|---|---|---|
+| [AWS - Well-Architected Reliability Pillar (2024)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) | I used it to ground reliability, monitoring, recovery, and testing methodology. | — |
