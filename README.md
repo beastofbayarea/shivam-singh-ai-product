@@ -1,6 +1,27 @@
 # Shivam Singh — AI & Data Product Management
 
-## Profile
+AI and data product leader building 0-to-1 GenAI, agentic AI, RAG, MLOps, responsible AI, and enterprise data platforms.
+
+[Resume](./shivam-singh-ai-product.pdf) · [LinkedIn](https://www.linkedin.com/in/beastofbayarea) · [Email](mailto:shiv-ai-product@umich.edu)
+
+## Contents
+
+- [About](#about)
+- [Product thesis](#product-thesis)
+- [Portfolio evidence](#portfolio-evidence)
+- [Interview answer: end-to-end ownership](#interview-answer-end-to-end-ownership)
+- [Product standard](#product-standard)
+
+## At a glance
+
+| Product question | Evidence |
+| --- | --- |
+| How do you move AI from demo to production? | [GenAI production reliability](./projects/enterprise-genai-production-reliability-turnaround.md) |
+| How do you govern context and data? | [Merchant knowledge graph](./projects/merchant-ai-governed-knowledge-graph.md) · [Intelligent document processing](./projects/investment-operations-intelligent-document-processing.md) |
+| How should authority scale with risk? | [Regulated enterprise agents](./projects/regulated-enterprise-agents-secure-deployment-platform.md) |
+| How do explanations change behavior? | [Wealth next-best actions](./projects/wealth-management-explainable-next-best-actions.md) · [Retail analytics](./projects/retail-analytics-product-factory-agile-hindcasting.md) |
+
+## About
 
 **Tell me about yourself.**
 
@@ -9,8 +30,6 @@ I am an AI and data product leader who turns complex analytical systems into pro
 My progression has been from analytical strategy to workflow products to enterprise AI platforms. I define the product boundary, make roadmap trade-offs, align Engineering, Risk, Sales, and Operations, and build the promotion and measurement system that lets an AI product earn production authority.
 
 I build AI products as decision systems: trusted context, bounded authority, reliable execution, human judgment, and measurable economic outcomes.
-
-[Resume](./shivam-singh-ai-product.pdf) · [LinkedIn](https://www.linkedin.com/in/beastofbayarea) · [shiv-ai-product@umich.edu](mailto:shiv-ai-product@umich.edu)
 
 ## Product thesis
 
@@ -24,7 +43,7 @@ real user decision → trusted context → permissioned action
 
 Each project below owns a different failure point in that chain. Together, they show how I decide what to build, what not to automate, and what evidence a system needs before it receives more authority.
 
-## Selected evidence
+## Portfolio evidence
 
 ### Reliability changes the roadmap
 
@@ -50,19 +69,27 @@ The key product question was not whether an agent could call a tool, but who cou
 
 [The retail analytics product factory](./projects/retail-analytics-product-factory-agile-hindcasting.md) used controlled store tests to create demand evidence, then constrained optimization with SKU economics, customer guardrails, evidence cards, and overrides. The publish cycle fell from six weeks to under one, overrides were below 5% by month two, and a rotating 1% sample kept the system learning.
 
-## Ownership story: regulated enterprise agents
+## Interview answer: end-to-end ownership
 
 **Tell me about a product you owned end to end.**
 
 I owned the product strategy and operating contract for a regulated enterprise-agent platform that grew from no tenants on the new path to more than 5,000 and supported $20 million in commercial scope.
 
+### Customer problem
+
 Customers needed a stateful, tool-using agent inside existing identity, network, data, approval, and audit boundaries—not simply a more capable model. Discovery exposed six recurring blockers: private connectivity, fragmented task state, inconsistent tool permissions, bolted-on human review, insufficient execution isolation, and traces that mixed sensitive reasoning with operational evidence.
 
+### Product decisions
+
 I defined the deployable-agent contract: enterprise identity, private runtime, persistent task state, permissioned tools, policy or human checkpoints, and customer-owned traces. I vetoed blanket autonomy and default observability that exposed sensitive reasoning. Engineering evaluated runtime, networking, state, sandbox, and tracing options through RFCs; I captured hard-to-reverse permission and trace decisions as ADRs and used workflow risk to set approval depth.
+
+### Promotion and measurement
 
 Promotion required identity tests, private-path evidence, tool scopes, human checkpoints, rollback, incident ownership, cost limits, support readiness, and customer acceptance. I measured qualified demand, grounded activation, repeated successful operation, workflow expansion, and supported revenue—not created agents.
 
 Private-system connection moved from weeks to minutes. One bank audit workflow moved from weeks to days with 60% more output; one clinical deployment saved roughly two hours per clinician per day. Those results remain scoped to the deployments that measured them.
+
+### Trade-off and ownership
 
 The central trade-off was immediate customer need versus scalable architecture. Temporary enablement handled one-off blockers; reusable identity, state, permission, isolation, and trace primitives handled repeated needs. I owned the customer problem, boundary, priorities, launch gates, adoption model, and outcome account; Engineering owned implementation, Risk retained approval, and customers retained workflow authority.
 
